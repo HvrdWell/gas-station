@@ -32,7 +32,7 @@
 		933B0BA52957A0F8000993CB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		933B0BA72957A27E000993CB /* MapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPage.swift; sourceTree = "<group>"; };
 		936C34CD295A28EB00BCF4F1 /* TrendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendView.swift; sourceTree = "<group>"; };
-		93B4FF422950D43B00F178D7 /* AzsTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzsTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B4FF422950D43B00F178D7 /* AzsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B4FF452950D43B00F178D7 /* AzsTabBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzsTabBarApp.swift; sourceTree = "<group>"; };
 		93B4FF472950D43B00F178D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93B4FF492950D43C00F178D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		93B4FF432950D43B00F178D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93B4FF422950D43B00F178D7 /* AzsTabBar.app */,
+				93B4FF422950D43B00F178D7 /* AzsProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		93B4FF412950D43B00F178D7 /* AzsTabBar */ = {
+		93B4FF412950D43B00F178D7 /* AzsProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93B4FF502950D43C00F178D7 /* Build configuration list for PBXNativeTarget "AzsTabBar" */;
+			buildConfigurationList = 93B4FF502950D43C00F178D7 /* Build configuration list for PBXNativeTarget "AzsProject" */;
 			buildPhases = (
 				93B4FF3E2950D43B00F178D7 /* Sources */,
 				93B4FF3F2950D43B00F178D7 /* Frameworks */,
@@ -174,9 +174,9 @@
 			);
 			dependencies = (
 			);
-			name = AzsTabBar;
+			name = AzsProject;
 			productName = AzsTabBar;
-			productReference = 93B4FF422950D43B00F178D7 /* AzsTabBar.app */;
+			productReference = 93B4FF422950D43B00F178D7 /* AzsProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -194,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 93B4FF3D2950D43B00F178D7 /* Build configuration list for PBXProject "AzsTabBar" */;
+			buildConfigurationList = 93B4FF3D2950D43B00F178D7 /* Build configuration list for PBXProject "AzsProject" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -207,7 +207,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93B4FF412950D43B00F178D7 /* AzsTabBar */,
+				93B4FF412950D43B00F178D7 /* AzsProject */,
 			);
 		};
 /* End PBXProject section */
@@ -384,7 +384,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.Hvrdwell.AzsTabBar;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.Hvrdwell.AzsProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -416,7 +416,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.Hvrdwell.AzsTabBar;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.Hvrdwell.AzsProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -430,7 +430,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		93B4FF3D2950D43B00F178D7 /* Build configuration list for PBXProject "AzsTabBar" */ = {
+		93B4FF3D2950D43B00F178D7 /* Build configuration list for PBXProject "AzsProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93B4FF4E2950D43C00F178D7 /* Debug */,
@@ -439,7 +439,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93B4FF502950D43C00F178D7 /* Build configuration list for PBXNativeTarget "AzsTabBar" */ = {
+		93B4FF502950D43C00F178D7 /* Build configuration list for PBXNativeTarget "AzsProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93B4FF512950D43C00F178D7 /* Debug */,
