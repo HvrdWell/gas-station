@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct AzsTabBarApp: App {
+   
     var body: some Scene {
+        
+        
         WindowGroup {
             ContentView()
+                
         }
     }
 }

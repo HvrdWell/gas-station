@@ -8,64 +8,20 @@
 import SwiftUI
 
 struct BaseView: View {
+    @StateObject private var vm = LocationViewModel()
     @StateObject var baseData = BaseViewModel( )
+    
     init(){
-        
         UITabBar.appearance().isHidden = true
     }
+    
     var body: some View {
-        TabView(selection: $baseData.currentTab){
-            Text("home")
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.black.opacity(0.04) )
-                .tag(Tab.Home)
-                
-            Text("trends")
-                .tag(Tab.trends)
-            Text("locat")
-                .tag(Tab.locat)
-            Text("person")
-                .tag(Tab.Person)
-        }
-        .overlay(
-            HStack(spacing:  0){
-                TabButton(Tab: .Home)
-                TabButton(Tab: .trends)
-                    .offset(x: -10)
-                
-                Button {
-                    print("213")
-                } label: {
-                    Image("QR")
-                        .resizable()
-                        .renderingMode(.template)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 26,height: 26)
-                        .foregroundColor(.white)
-                        .offset(x: -1)
-                        .padding(18)
-                        .background(Color(hue: 0.61, saturation: 0.206, brightness: 0.179))
-                        .clipShape(Circle())
-                        .shadow(color: Color.black.opacity(0.04), radius: 5, x: 5, y: 5)
-                        .shadow(color: Color.black.opacity(0.04), radius: 5, x: -5, y: -5)
-                }
-                .offset(y: -22)
-
-                
-                TabButton(Tab: .locat)
-                    .offset(x: 10)
-                TabButton(Tab: .Person)
-            }
-                .background(
-                    Color.white
-                        .clipShape(CustomCurveShape())
-                        .shadow(color: Color.black.opacity(0.04), radius: 5, x: -5, y: -5)
-                        .ignoresSafeArea(.container, edges: .bottom)
-                )
-            
-            ,alignment: .bottom
-        )
+        TabViewExt
     }
+    
+    
+    
+    
     @ViewBuilder
     func TabButton(Tab: Tab)-> some View{
         Button {
@@ -88,5 +44,66 @@ struct BaseView: View {
 struct BaseView_Previews: PreviewProvider {
     static var previews: some View {
         BaseView()
+
     }
+}
+
+extension BaseView{
+    private var TabViewExt: some View{
+        
+        TabView(selection: $baseData.currentTab){
+            Text("locat")
+                .tag(Tab.Home)
+                
+            TrendView()
+                .tag(Tab.trends)
+            MapPage() .environmentObject(vm)
+                .tag(Tab.locat)
+            Text("person")
+                .tag(Tab.Person)
+        }
+        .overlay(
+            HStack(spacing:  0){
+                TabButton(Tab: .Home)
+                TabButton(Tab: .trends)
+                    .offset(x: -10)
+                
+               QrButton
+                TabButton(Tab: .locat)
+                    .offset(x: 10)
+                TabButton(Tab: .Person)
+            }
+                .background(
+                    Color.white
+                        .clipShape(CustomCurveShape())
+                        .shadow(color: Color.black.opacity(0.04), radius: 5, x: -5, y: -5)
+                        .ignoresSafeArea(.container, edges: .bottom)
+                )
+            
+            ,alignment: .bottom
+        )
+        
+    }
+    private var QrButton: some View{
+        Button {
+            print("213")
+        } label: {
+            Image("QR")
+                .resizable()
+                .renderingMode(.template)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 26,height: 26)
+                .foregroundColor(.white)
+                .offset(x: -1)
+                .padding(18)
+                .background(Color(hue: 0.61, saturation: 0.206, brightness: 0.179))
+                .clipShape(Circle())
+                .shadow(color: Color.black.opacity(0.04), radius: 5, x: 5, y: 5)
+                .shadow(color: Color.black.opacity(0.04), radius: 5, x: -5, y: -5)
+        }.offset(y: -22)
+    }
+    
+    
+    
+    
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		933B0B9F29579FB1000993CB /* LocationMapAnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0B9E29579FB1000993CB /* LocationMapAnotationView.swift */; };
+		933B0BA12957A092000993CB /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0BA02957A092000993CB /* LocationViewModel.swift */; };
+		933B0BA42957A0BE000993CB /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0BA32957A0BE000993CB /* LocationsDataService.swift */; };
+		933B0BA62957A0F8000993CB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0BA52957A0F8000993CB /* Location.swift */; };
+		933B0BA82957A27E000993CB /* MapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0BA72957A27E000993CB /* MapPage.swift */; };
+		936C34CE295A28EB00BCF4F1 /* TrendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936C34CD295A28EB00BCF4F1 /* TrendView.swift */; };
 		93B4FF462950D43B00F178D7 /* AzsTabBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF452950D43B00F178D7 /* AzsTabBarApp.swift */; };
 		93B4FF482950D43B00F178D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF472950D43B00F178D7 /* ContentView.swift */; };
 		93B4FF4A2950D43C00F178D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B4FF492950D43C00F178D7 /* Assets.xcassets */; };
@@ -14,9 +20,18 @@
 		93B4FF572950D4B800F178D7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF562950D4B800F178D7 /* BaseView.swift */; };
 		93B4FF592950D4E000F178D7 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF582950D4E000F178D7 /* BaseViewModel.swift */; };
 		93B4FF5B2950E77900F178D7 /* CustomCurveShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF5A2950E77900F178D7 /* CustomCurveShape.swift */; };
+		93F5A48A2958F6AA00A031B9 /* PromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5A4892958F6AA00A031B9 /* PromoView.swift */; };
+		93F5A48C2958F6F700A031B9 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5A48B2958F6F700A031B9 /* Promo.swift */; };
+		93F5A48F2958FD3900A031B9 /* PromoOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5A48E2958FD3900A031B9 /* PromoOpen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		933B0B9E29579FB1000993CB /* LocationMapAnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnotationView.swift; sourceTree = "<group>"; };
+		933B0BA02957A092000993CB /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		933B0BA32957A0BE000993CB /* LocationsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		933B0BA52957A0F8000993CB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		933B0BA72957A27E000993CB /* MapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPage.swift; sourceTree = "<group>"; };
+		936C34CD295A28EB00BCF4F1 /* TrendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendView.swift; sourceTree = "<group>"; };
 		93B4FF422950D43B00F178D7 /* AzsTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzsTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B4FF452950D43B00F178D7 /* AzsTabBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzsTabBarApp.swift; sourceTree = "<group>"; };
 		93B4FF472950D43B00F178D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +40,9 @@
 		93B4FF562950D4B800F178D7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		93B4FF582950D4E000F178D7 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		93B4FF5A2950E77900F178D7 /* CustomCurveShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurveShape.swift; sourceTree = "<group>"; };
+		93F5A4892958F6AA00A031B9 /* PromoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoView.swift; sourceTree = "<group>"; };
+		93F5A48B2958F6F700A031B9 /* Promo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
+		93F5A48E2958FD3900A031B9 /* PromoOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoOpen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		933B0BA22957A0AB000993CB /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				933B0BA32957A0BE000993CB /* LocationsDataService.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
 		93B4FF392950D43B00F178D7 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +83,7 @@
 		93B4FF442950D43B00F178D7 /* AzsTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				933B0BA22957A0AB000993CB /* DataServices */,
 				93B4FF552950D47F00F178D7 /* ViewModel */,
 				93B4FF542950D44D00F178D7 /* View */,
 				93B4FF532950D44600F178D7 /* Model */,
@@ -79,6 +106,8 @@
 		93B4FF532950D44600F178D7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				933B0BA52957A0F8000993CB /* Location.swift */,
+				93F5A48B2958F6F700A031B9 /* Promo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -86,8 +115,10 @@
 		93B4FF542950D44D00F178D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93F5A48D2958FCED00A031B9 /* Promo */,
+				93F5A4882958F65A00A031B9 /* TabBar */,
+				93F5A4872958F65100A031B9 /* Map */,
 				93B4FF562950D4B800F178D7 /* BaseView.swift */,
-				93B4FF5A2950E77900F178D7 /* CustomCurveShape.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,8 +127,36 @@
 			isa = PBXGroup;
 			children = (
 				93B4FF582950D4E000F178D7 /* BaseViewModel.swift */,
+				933B0BA02957A092000993CB /* LocationViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		93F5A4872958F65100A031B9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				933B0B9E29579FB1000993CB /* LocationMapAnotationView.swift */,
+				933B0BA72957A27E000993CB /* MapPage.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		93F5A4882958F65A00A031B9 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				93B4FF5A2950E77900F178D7 /* CustomCurveShape.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		93F5A48D2958FCED00A031B9 /* Promo */ = {
+			isa = PBXGroup;
+			children = (
+				93F5A4892958F6AA00A031B9 /* PromoView.swift */,
+				93F5A48E2958FD3900A031B9 /* PromoOpen.swift */,
+				936C34CD295A28EB00BCF4F1 /* TrendView.swift */,
+			);
+			path = Promo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +231,16 @@
 			files = (
 				93B4FF572950D4B800F178D7 /* BaseView.swift in Sources */,
 				93B4FF592950D4E000F178D7 /* BaseViewModel.swift in Sources */,
+				933B0B9F29579FB1000993CB /* LocationMapAnotationView.swift in Sources */,
+				933B0BA82957A27E000993CB /* MapPage.swift in Sources */,
 				93B4FF5B2950E77900F178D7 /* CustomCurveShape.swift in Sources */,
+				93F5A48A2958F6AA00A031B9 /* PromoView.swift in Sources */,
+				933B0BA62957A0F8000993CB /* Location.swift in Sources */,
+				936C34CE295A28EB00BCF4F1 /* TrendView.swift in Sources */,
+				93F5A48C2958F6F700A031B9 /* Promo.swift in Sources */,
+				933B0BA42957A0BE000993CB /* LocationsDataService.swift in Sources */,
+				93F5A48F2958FD3900A031B9 /* PromoOpen.swift in Sources */,
+				933B0BA12957A092000993CB /* LocationViewModel.swift in Sources */,
 				93B4FF482950D43B00F178D7 /* ContentView.swift in Sources */,
 				93B4FF462950D43B00F178D7 /* AzsTabBarApp.swift in Sources */,
 			);
@@ -309,8 +377,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,9 +386,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Hvrdwell.AzsTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -338,8 +409,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,9 +418,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Hvrdwell.AzsTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
