@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct AzsTabBarApp: App {
-   
+    //@StateObject private var vmQR = LocationViewModel()
+    
     var body: some Scene {
         
         
         WindowGroup {
             ContentView()
+            
                 
         }
     }

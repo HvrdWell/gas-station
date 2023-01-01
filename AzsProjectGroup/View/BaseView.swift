@@ -10,6 +10,7 @@ import SwiftUI
 struct BaseView: View {
     @StateObject private var vm = LocationViewModel()
     @StateObject var baseData = BaseViewModel( )
+    @State private var showSheet = false
     
     init(){
         UITabBar.appearance().isHidden = true
@@ -86,7 +87,7 @@ extension BaseView{
     }
     private var QrButton: some View{
         Button {
-            print("213")
+            showSheet.toggle()
         } label: {
             Image("QR")
                 .resizable()
@@ -101,6 +102,9 @@ extension BaseView{
                 .shadow(color: Color.black.opacity(0.04), radius: 5, x: 5, y: 5)
                 .shadow(color: Color.black.opacity(0.04), radius: 5, x: -5, y: -5)
         }.offset(y: -22)
+            .sheet(isPresented: $showSheet, content: {
+            QrCodeView()
+        })
     }
     
     

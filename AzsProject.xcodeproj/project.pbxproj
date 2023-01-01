@@ -13,6 +13,7 @@
 		933B0BA62957A0F8000993CB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0BA52957A0F8000993CB /* Location.swift */; };
 		933B0BA82957A27E000993CB /* MapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B0BA72957A27E000993CB /* MapPage.swift */; };
 		936C34CE295A28EB00BCF4F1 /* TrendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936C34CD295A28EB00BCF4F1 /* TrendView.swift */; };
+		936C34D1295A52AE00BCF4F1 /* ScalingHeaderScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 936C34D0295A52AE00BCF4F1 /* ScalingHeaderScrollView */; };
 		93B4FF462950D43B00F178D7 /* AzsTabBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF452950D43B00F178D7 /* AzsTabBarApp.swift */; };
 		93B4FF482950D43B00F178D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF472950D43B00F178D7 /* ContentView.swift */; };
 		93B4FF4A2950D43C00F178D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B4FF492950D43C00F178D7 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		93B4FF572950D4B800F178D7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF562950D4B800F178D7 /* BaseView.swift */; };
 		93B4FF592950D4E000F178D7 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF582950D4E000F178D7 /* BaseViewModel.swift */; };
 		93B4FF5B2950E77900F178D7 /* CustomCurveShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF5A2950E77900F178D7 /* CustomCurveShape.swift */; };
+		93E8934429623E620077BDD0 /* QrCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8934329623E620077BDD0 /* QrCodeView.swift */; };
 		93F5A48A2958F6AA00A031B9 /* PromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5A4892958F6AA00A031B9 /* PromoView.swift */; };
 		93F5A48C2958F6F700A031B9 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5A48B2958F6F700A031B9 /* Promo.swift */; };
 		93F5A48F2958FD3900A031B9 /* PromoOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5A48E2958FD3900A031B9 /* PromoOpen.swift */; };
@@ -40,6 +42,7 @@
 		93B4FF562950D4B800F178D7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		93B4FF582950D4E000F178D7 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		93B4FF5A2950E77900F178D7 /* CustomCurveShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurveShape.swift; sourceTree = "<group>"; };
+		93E8934329623E620077BDD0 /* QrCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeView.swift; sourceTree = "<group>"; };
 		93F5A4892958F6AA00A031B9 /* PromoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoView.swift; sourceTree = "<group>"; };
 		93F5A48B2958F6F700A031B9 /* Promo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
 		93F5A48E2958FD3900A031B9 /* PromoOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoOpen.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936C34D1295A52AE00BCF4F1 /* ScalingHeaderScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +71,7 @@
 		93B4FF392950D43B00F178D7 = {
 			isa = PBXGroup;
 			children = (
-				93B4FF442950D43B00F178D7 /* AzsTabBar */,
+				93B4FF442950D43B00F178D7 /* AzsProjectGroup */,
 				93B4FF432950D43B00F178D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,7 +84,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		93B4FF442950D43B00F178D7 /* AzsTabBar */ = {
+		93B4FF442950D43B00F178D7 /* AzsProjectGroup */ = {
 			isa = PBXGroup;
 			children = (
 				933B0BA22957A0AB000993CB /* DataServices */,
@@ -92,7 +96,7 @@
 				93B4FF492950D43C00F178D7 /* Assets.xcassets */,
 				93B4FF4B2950D43C00F178D7 /* Preview Content */,
 			);
-			path = AzsTabBar;
+			path = AzsProjectGroup;
 			sourceTree = "<group>";
 		};
 		93B4FF4B2950D43C00F178D7 /* Preview Content */ = {
@@ -115,6 +119,7 @@
 		93B4FF542950D44D00F178D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93E8934229623E4C0077BDD0 /* QrCode */,
 				93F5A48D2958FCED00A031B9 /* Promo */,
 				93F5A4882958F65A00A031B9 /* TabBar */,
 				93F5A4872958F65100A031B9 /* Map */,
@@ -130,6 +135,14 @@
 				933B0BA02957A092000993CB /* LocationViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		93E8934229623E4C0077BDD0 /* QrCode */ = {
+			isa = PBXGroup;
+			children = (
+				93E8934329623E620077BDD0 /* QrCodeView.swift */,
+			);
+			path = QrCode;
 			sourceTree = "<group>";
 		};
 		93F5A4872958F65100A031B9 /* Map */ = {
@@ -175,6 +188,9 @@
 			dependencies = (
 			);
 			name = AzsProject;
+			packageProductDependencies = (
+				936C34D0295A52AE00BCF4F1 /* ScalingHeaderScrollView */,
+			);
 			productName = AzsTabBar;
 			productReference = 93B4FF422950D43B00F178D7 /* AzsProject.app */;
 			productType = "com.apple.product-type.application";
@@ -203,6 +219,9 @@
 				Base,
 			);
 			mainGroup = 93B4FF392950D43B00F178D7;
+			packageReferences = (
+				936C34CF295A52AE00BCF4F1 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
+			);
 			productRefGroup = 93B4FF432950D43B00F178D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,6 +262,7 @@
 				933B0BA12957A092000993CB /* LocationViewModel.swift in Sources */,
 				93B4FF482950D43B00F178D7 /* ContentView.swift in Sources */,
 				93B4FF462950D43B00F178D7 /* AzsTabBarApp.swift in Sources */,
+				93E8934429623E620077BDD0 /* QrCodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +390,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AzsTabBar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AzsProjectGroup/Preview Content\"";
 				DEVELOPMENT_TEAM = 269JFZMZB7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -402,7 +422,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AzsTabBar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AzsProjectGroup/Preview Content\"";
 				DEVELOPMENT_TEAM = 269JFZMZB7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -449,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		936C34CF295A52AE00BCF4F1 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ScalingHeaderScrollView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		936C34D0295A52AE00BCF4F1 /* ScalingHeaderScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 936C34CF295A52AE00BCF4F1 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */;
+			productName = ScalingHeaderScrollView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93B4FF3A2950D43B00F178D7 /* Project object */;
 }
