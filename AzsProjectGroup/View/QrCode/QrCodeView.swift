@@ -9,11 +9,11 @@ import CoreImage
 import CoreImage.CIFilterBuiltins
 import SwiftUI
 struct QrCodeView: View {
-    
     @State private var text = ""
-    @State private var bonusCount = 0
+   // let userModel = 
+
     var body: some View {
-        
+
         
             NavigationStack {
                     VStack {
@@ -26,24 +26,16 @@ struct QrCodeView: View {
                             .frame(width: 350, height: 350)
                             .padding(.all)
                             .background(Color.white)
+                      //  Text(User)
                     }
             }.background(.thinMaterial)
             .background(Image("bronzeBackGround"))
     }
-    
-    func generateQR(text: String) -> Data? {
-        let filter = CIFilter.qrCodeGenerator()
-        guard let data = text.data(using: .ascii, allowLossyConversion: false) else { return nil }
-        filter.message = data
-        guard let ciimage = filter.outputImage else { return nil }
-        let transform = CGAffineTransform(scaleX: 10, y: 10)
-        let scaledCIImage = ciimage.transformed(by: transform)
-        let uiimage = UIImage(ciImage: scaledCIImage)
-        return uiimage.pngData()!
-    }
+
 }
 struct QrCodeView_Previews: PreviewProvider {
     static var previews: some View {
         QrCodeView()
+           
     }
 }

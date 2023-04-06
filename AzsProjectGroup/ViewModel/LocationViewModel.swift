@@ -32,7 +32,6 @@ class LocationViewModel: ObservableObject {
         let locations = LocationsDataService.locations
         self.locations = locations
         self.mapLocation = locations.first!
-        
         self.updateMapRegion(location: locations.first!)
     }
     private func updateMapRegion(location: Location){

@@ -16,16 +16,6 @@ struct TrendView: View {
         NavigationView{
             ScrollView{
                 VStack(spacing: 10) {
-                    HStack {
-                        Text("Акции")
-                            .multilineTextAlignment(.leading)
-                            .font(.system(.title,design: .rounded))
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                        Spacer( )
-                    }
-                    .padding(.leading,25)
-                    
                     VStack(spacing: 20) {
                         ForEach(data){
                             item in
@@ -41,7 +31,11 @@ struct TrendView: View {
                     
                 }
                 Spacer(minLength: 70)
-            }
+            }.navigationBarHidden(false)
+                .navigationTitle("Акции")
+                .font(.system(.title,design: .rounded))
+                .fontWeight(.bold)
+                .foregroundColor(.black)
         }
     }
     

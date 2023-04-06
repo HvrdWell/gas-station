@@ -20,19 +20,11 @@ struct PromoOpen: View {
                 titleOfPromo
                 Divider()
                 descriptionOfPromo
-                
-                
             }
-            
             .tabViewStyle(PageTabViewStyle())
         }.ignoresSafeArea()
             .background(.ultraThinMaterial)
-        
-        
     }
-    
-    
-    
 }
 
 

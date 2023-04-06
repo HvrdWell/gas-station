@@ -9,7 +9,15 @@ import SwiftUI
 import MapKit
 struct MapPage: View {
     @EnvironmentObject private var vm: LocationViewModel
-
+    @StateObject private var locationManager = LocationManager ( )
+    
+    var region: Binding<MKCoordinateRegion>? {
+        guard let location = locationManager.location else {
+            return MKCoordinateRegion.defaulPos().getBinding()
+        }
+        let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 5000, longitudinalMeters: 5000)
+        return region.getBinding( )
+    }
     var body: some View {
         mapLayer.ignoresSafeArea()
     }
@@ -24,7 +32,7 @@ struct MapPage_Previews: PreviewProvider {
 
 extension MapPage{
     private var mapLayer: some View{
-        Map(coordinateRegion: $vm.mapRegion, annotationItems: vm.locations, annotationContent: { location in
+        Map(coordinateRegion: $vm.mapRegion, showsUserLocation: true, annotationItems: vm.locations, annotationContent: { location in
             //MapMarker(coordinate: location.coordinates, tint: .blue) Это вывод сининий воскл знак на карту
             MapAnnotation(coordinate: location.coordinates){
                 //Text("Hello") Вместо меток будет хелло

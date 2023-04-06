@@ -103,7 +103,7 @@ extension BaseView{
                 .shadow(color: Color.black.opacity(0.04), radius: 5, x: -5, y: -5)
         }.offset(y: -22)
             .sheet(isPresented: $showSheet, content: {
-            QrCodeView()
+            QrCodeView() .environmentObject(LocationViewModel())
         })
     }
     
