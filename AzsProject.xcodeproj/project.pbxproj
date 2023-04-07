@@ -83,6 +83,7 @@
 		933B0BA22957A0AB000993CB /* DataServices */ = {
 			isa = PBXGroup;
 			children = (
+				9382B76E29DF4CB100478601 /* LocationManager.swift */,
 				933B0BA32957A0BE000993CB /* LocationsDataService.swift */,
 			);
 			path = DataServices;
@@ -191,7 +192,6 @@
 			children = (
 				933B0B9E29579FB1000993CB /* LocationMapAnotationView.swift */,
 				933B0BA72957A27E000993CB /* MapPage.swift */,
-				9382B76E29DF4CB100478601 /* LocationManager.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
