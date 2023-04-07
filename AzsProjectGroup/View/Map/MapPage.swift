@@ -19,7 +19,12 @@ struct MapPage: View {
         return region.getBinding( )
     }
     var body: some View {
-        mapLayer.ignoresSafeArea()
+        ZStack{
+            mapLayer
+                .ignoresSafeArea( )
+        }.sheet(item: $vm.sheetLocation,  onDismiss: nil){
+            location in locationDetailView(location: location)
+        }
     }
 }
 
@@ -41,6 +46,7 @@ extension MapPage{
                     .shadow(radius: 10)
                     .onTapGesture {
                         vm.showNextLocation(Location: location)
+                        vm.sheetLocation = location
                     }
             }
         })
