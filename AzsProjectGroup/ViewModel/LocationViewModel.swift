@@ -51,6 +51,7 @@ class LocationViewModel: ObservableObject {
         }
     }
     
+    
     func nextButtonPressed( ){
        
         guard let currentIndex = locations.firstIndex(where: {$0 == mapLocation}) else {

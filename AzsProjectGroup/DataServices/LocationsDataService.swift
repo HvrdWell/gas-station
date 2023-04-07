@@ -32,10 +32,10 @@ class LocationsDataService {
             cityName: "Moscow",
             coordinates: CLLocationCoordinate2D(latitude: 55.861141, longitude: 37.590973),
             description: "The House of PavukVasya",
-            idTypeFuel: [1,2],
+            idTypeFuel: [0,1],
             nameTypeFuel: [
-                          "92",
-                          "95"
+                "АИ-92",
+                "АИ-95"
                           ],
             price: [54.44 , 56.54],
             imageNames: [
