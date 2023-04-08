@@ -97,7 +97,7 @@ extension locationDetailView{
     private var cells: some View {
         HStack(alignment: .center){
             Button {
-                print("312")
+                Text("FDS")
             } label: {
                 Text("Заправиться")
                     .foregroundColor(.white)
@@ -107,6 +107,7 @@ extension locationDetailView{
                     .cornerRadius(10)
             }
         }.frame(maxWidth: .infinity)
+            
     }
     @ViewBuilder func getView(viewImageName: String, ViewName: String) -> some View {
         HStack (alignment: .center){

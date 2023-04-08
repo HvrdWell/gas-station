@@ -24,6 +24,7 @@ struct MapPage: View {
                 .ignoresSafeArea( )
         }.sheet(item: $vm.sheetLocation,  onDismiss: nil){
             location in locationDetailView(location: location)
+                .presentationDetents([.large, .medium])
         }
     }
 }
@@ -38,9 +39,7 @@ struct MapPage_Previews: PreviewProvider {
 extension MapPage{
     private var mapLayer: some View{
         Map(coordinateRegion: $vm.mapRegion, showsUserLocation: true, annotationItems: vm.locations, annotationContent: { location in
-            //MapMarker(coordinate: location.coordinates, tint: .blue) Это вывод сининий воскл знак на карту
             MapAnnotation(coordinate: location.coordinates){
-                //Text("Hello") Вместо меток будет хелло
                 LocationMapAnotationView()
                     .scaleEffect(vm.mapLocation == location ? 1 : 0.7)
                     .shadow(radius: 10)

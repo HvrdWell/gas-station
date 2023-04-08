@@ -11,7 +11,7 @@ struct LocationMapAnotationView: View {
     let accentColor = Color("AccentColor")
     var body: some View {
         VStack(spacing: 0){
-            Image(systemName: "cart.circle.fill")
+            Image("mLogoMapp")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 30, height: 30)
@@ -24,7 +24,7 @@ struct LocationMapAnotationView: View {
             Image(systemName: "triangle.fill")
                 .resizable()
                 .scaledToFit()
-                .foregroundColor(accentColor)
+                .foregroundColor(.green)
                 .frame(width: 10, height: 10)
                 .rotationEffect(Angle(degrees: 180))
                 .offset(y: -3)
