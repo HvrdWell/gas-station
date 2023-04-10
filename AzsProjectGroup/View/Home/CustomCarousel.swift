@@ -34,19 +34,16 @@ struct CustomCarousel<Content: View, Item, ID>: View where Item: RandomAccessCol
         GeometryReader{ proxy in
             let size = proxy.size
             let cardWidth = size.width - (cardPadding - spacing)
-            LazyHStack(spacing: spacing) {
+            HStack(spacing: spacing) {
                 ForEach(items, id: id){ movie in
                     let index = indexOf(item: movie)
                     content(movie, CGSize(width: size.width - cardPadding, height: size.height))
-                        .rotationEffect(.init(degrees: Double(index) * 5), anchor: .bottom)
-                        .rotationEffect(.init(degrees: rotation), anchor: .bottom)
-                        .offset(y: offsetY(index: index, cardWidth: cardWidth))
+
                         .frame(width: size.width - cardPadding, height: size.height)
                         .contentShape(Rectangle())
                 }
             }
-            .padding(.horizontal,spacing)
-            .offset(x: limitScroll())
+            .offset(x: offset)
             .contentShape(Rectangle())
             .gesture(
             DragGesture(minimumDistance: 5)
@@ -57,25 +54,9 @@ struct CustomCarousel<Content: View, Item, ID>: View where Item: RandomAccessCol
                 .onEnded{onEnd(value: $0, cardWidth: cardWidth)}
             )
         }
-        .padding(.top,60)
-        .onAppear{
-            let extraSpace = (cardPadding / 2) - spacing
-            offset = extraSpace
-            lastStoredOffset = extraSpace
-        }
         .animation(.easeInOut, value: tranlation == 0)
     }
-    
-    func offsetY(index: Int, cardWidth: CGFloat) -> CGFloat{
-        let progress = ((tranlation < 0 ? tranlation : -tranlation) / cardWidth) * 60
-        let yOffset = -progress < 60 ? progress : (progress + 120)
-        
-        let previous = (index - 1) == self.index ? (tranlation < 0 ? yOffset : -yOffset) : 0
-        let next = (index + 1) == self.index ? (tranlation < 0 ? yOffset :  -yOffset) : 0
-        let In_Between = (index - 1) == self.index ? previous : next
-        
-        return index == self.index  ? -60 - yOffset : In_Between
-    }
+
     
     func indexOf(item: Item.Element) ->Int{
         let array = Array(items)
@@ -85,22 +66,11 @@ struct CustomCarousel<Content: View, Item, ID>: View where Item: RandomAccessCol
         return 0
     }
     
-    func limitScroll() -> CGFloat{
-        let extraSpace = (cardPadding / 2) - spacing
-        if index == 0 && offset > extraSpace{
-            return extraSpace + (offset / 4)
-        }else if index == items.count - 1 && tranlation < 0 {
-            return offset - (tranlation / 2)
-        }else{
-            return offset
-        }
-    }
     func onChanged(value: DragGesture.Value, cardWidth: CGFloat){
-        let translationX = value.translation.width
-        offset = tranlation + lastStoredOffset
-        
-        let progress = offset / cardWidth
-        rotation = progress * 5
+        var translationX = value.translation.width
+        translationX = (index == 0 && translationX > 0 ? (translationX / 4) : translationX)
+        translationX = (index == items.count - 1 && translationX < 0 ? (translationX / 4 ) : translationX)
+        offset = translationX + lastStoredOffset
     }
     func onEnd(value: DragGesture.Value, cardWidth: CGFloat){
         var _index = (offset / cardWidth).rounded()
@@ -110,12 +80,11 @@ struct CustomCarousel<Content: View, Item, ID>: View where Item: RandomAccessCol
         
         index = -currentIndex
         
-        withAnimation(.easeInOut(duration: 0.25)) {
-            let extraSpace = (cardPadding / 2) - spacing
+        withAnimation(.interactiveSpring(response: 0.4, dampingFraction: 1, blendDuration: 1)) {
+            let extraSpace = index == 0 ? 0 : (cardPadding / 2)
             offset = (cardWidth * _index) + extraSpace
             
-            let progress = offset / cardWidth
-            rotation = (progress * 5).rounded() - 1
+
         }
         lastStoredOffset = offset
     }

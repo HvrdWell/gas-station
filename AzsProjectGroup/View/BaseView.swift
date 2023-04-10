@@ -11,9 +11,10 @@ struct BaseView: View {
     @StateObject private var vm = LocationViewModel()
     @StateObject var baseData = BaseViewModel( )
     @State private var showSheet = false
+    @State var showTabBar: Bool = true
     
     init(){
-        UITabBar.appearance().isHidden = true
+        UITabBar.appearance().isHidden = showTabBar
     }
     
     var body: some View {
@@ -53,7 +54,7 @@ extension BaseView{
     private var TabViewExt: some View{
         
         TabView(selection: $baseData.currentTab){
-            Text("locat")
+            HomeView( userData: userModel())
                 .tag(Tab.Home)
                 
             TrendView()
@@ -63,24 +64,35 @@ extension BaseView{
             Text("person")
                 .tag(Tab.Person)
         }
+        .onReceive(NotificationCenter.default.publisher(for: .init("SHOWTABBAR"))){ _ in
+            showTabBar = true
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .init("HIDETABBAR"))){ _ in
+            showTabBar = false
+        }
+            .animation(.interactiveSpring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.7), value: showTabBar)
+        
         .overlay(
-            HStack(spacing:  0){
-                TabButton(Tab: .Home)
-                TabButton(Tab: .trends)
-                    .offset(x: -10)
-                
-               QrButton
-                TabButton(Tab: .locat)
-                    .offset(x: 10)
-                TabButton(Tab: .Person)
-            }
-                .background(
-                    Color.white
-                        .clipShape(CustomCurveShape())
-                        .shadow(color: Color.black.opacity(0.04), radius: 5, x: -5, y: -5)
-                        .ignoresSafeArea(.container, edges: .bottom)
-                )
-            
+            Group{
+                if showTabBar {
+                    HStack(spacing:  0){
+                        TabButton(Tab: .Home)
+                        TabButton(Tab: .trends)
+                            .offset(x: -10)
+                        
+                        QrButton
+                        TabButton(Tab: .locat)
+                            .offset(x: 10)
+                        TabButton(Tab: .Person)
+                    }
+                    .background(
+                        Color.white
+                            .clipShape(CustomCurveShape())
+                            .shadow(color: Color.black.opacity(0.04), radius: 5, x: -5, y: -5)
+                            .ignoresSafeArea(.container, edges: .bottom)
+                    )
+                }
+            }.animation(.easeInOut, value: 0.2)
             ,alignment: .bottom
         )
         
@@ -106,8 +118,13 @@ extension BaseView{
             QrCodeView() .environmentObject(LocationViewModel())
         })
     }
-    
-    
-    
-    
+}
+
+extension View{
+    func showTabBarFunc( ) {
+        NotificationCenter.default.post(name: NSNotification.Name("SHOWTABBAR"), object: nil)
+    }
+    func hideTabBarFunc( ) {
+        NotificationCenter.default.post(name: NSNotification.Name("HIDETABBAR"), object: nil)
+    }
 }
