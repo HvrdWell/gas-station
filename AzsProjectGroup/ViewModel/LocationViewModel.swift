@@ -12,7 +12,7 @@ import SwiftUI
 class LocationViewModel: ObservableObject {
     //all loaded locations
     @Published var locations: [Location]
-    
+    @State var ActiveView: Int = 1
     //Current location on map
     @Published var mapLocation: Location{
         didSet{
@@ -27,7 +27,7 @@ class LocationViewModel: ObservableObject {
     
     //Show location detail via sheet
     @Published var sheetLocation: Location? = nil
-    
+    @Published var sheetFuelLocation: Location? = nil
     init() {
         let locations = LocationsDataService.locations
         self.locations = locations
@@ -38,6 +38,13 @@ class LocationViewModel: ObservableObject {
         withAnimation(.easeInOut){
             mapRegion = MKCoordinateRegion(center: location.coordinates, span: mapSpan)
         }
+    }
+    func openFuelingView( ) {
+        sheetFuelLocation = sheetLocation
+        sheetLocation = nil
+    }
+    func CurrentView(page: Int)   {
+        ActiveView = page
     }
     func toggleLocationsList(){
         withAnimation(.easeInOut){

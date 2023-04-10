@@ -18,7 +18,7 @@
 		9374B56229C9C91100440C4D /* PersonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9374B56129C9C91100440C4D /* PersonCard.swift */; };
 		937D99D52962FC54009EB1E2 /* QrCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D99D42962FC54009EB1E2 /* QrCodeViewModel.swift */; };
 		9382B76F29DF4CB100478601 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9382B76E29DF4CB100478601 /* LocationManager.swift */; };
-		9382B77229E029F200478601 /* locationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9382B77129E029F200478601 /* locationDetailView.swift */; };
+		9382B77229E029F200478601 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9382B77129E029F200478601 /* LocationDetailView.swift */; };
 		939C6DEC29636E7D00F06C7E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939C6DEB29636E7D00F06C7E /* User.swift */; };
 		939C6DEE2963731C00F06C7E /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 939C6DED2963731C00F06C7E /* GoogleService-Info-2.plist */; };
 		939C6DF1296373FE00F06C7E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 939C6DF0296373FE00F06C7E /* FirebaseAnalytics */; };
@@ -34,6 +34,10 @@
 		93B4FF5B2950E77900F178D7 /* CustomCurveShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF5A2950E77900F178D7 /* CustomCurveShape.swift */; };
 		93D5BD4729E196FD0027A9D3 /* RefuelingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5BD4629E196FD0027A9D3 /* RefuelingView.swift */; };
 		93D5BD4929E1A2D50027A9D3 /* RefuelingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5BD4829E1A2D50027A9D3 /* RefuelingSlider.swift */; };
+		93D5BD6729E2FDF10027A9D3 /* SelectColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5BD6629E2FDF10027A9D3 /* SelectColumn.swift */; };
+		93D5BD6A29E42B030027A9D3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5BD6929E42B030027A9D3 /* HomeView.swift */; };
+		93D5BD6E29E42CD10027A9D3 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5BD6D29E42CD10027A9D3 /* UserViewModel.swift */; };
+		93D5BD7029E43EC80027A9D3 /* CustomCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5BD6F29E43EC80027A9D3 /* CustomCarousel.swift */; };
 		93E8934429623E620077BDD0 /* QrCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8934329623E620077BDD0 /* QrCodeView.swift */; };
 		93F5A48A2958F6AA00A031B9 /* PromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5A4892958F6AA00A031B9 /* PromoView.swift */; };
 		93F5A48C2958F6F700A031B9 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5A48B2958F6F700A031B9 /* Promo.swift */; };
@@ -51,7 +55,7 @@
 		9374B56129C9C91100440C4D /* PersonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCard.swift; sourceTree = "<group>"; };
 		937D99D42962FC54009EB1E2 /* QrCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeViewModel.swift; sourceTree = "<group>"; };
 		9382B76E29DF4CB100478601 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		9382B77129E029F200478601 /* locationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationDetailView.swift; sourceTree = "<group>"; };
+		9382B77129E029F200478601 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		939C6DEB29636E7D00F06C7E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		939C6DED2963731C00F06C7E /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		93B4FF422950D43B00F178D7 /* AzsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +68,10 @@
 		93B4FF5A2950E77900F178D7 /* CustomCurveShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurveShape.swift; sourceTree = "<group>"; };
 		93D5BD4629E196FD0027A9D3 /* RefuelingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefuelingView.swift; sourceTree = "<group>"; };
 		93D5BD4829E1A2D50027A9D3 /* RefuelingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefuelingSlider.swift; sourceTree = "<group>"; };
+		93D5BD6629E2FDF10027A9D3 /* SelectColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectColumn.swift; sourceTree = "<group>"; };
+		93D5BD6929E42B030027A9D3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		93D5BD6D29E42CD10027A9D3 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		93D5BD6F29E43EC80027A9D3 /* CustomCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarousel.swift; sourceTree = "<group>"; };
 		93E8934329623E620077BDD0 /* QrCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeView.swift; sourceTree = "<group>"; };
 		93F5A4892958F6AA00A031B9 /* PromoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoView.swift; sourceTree = "<group>"; };
 		93F5A48B2958F6F700A031B9 /* Promo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
@@ -114,7 +122,7 @@
 		9382B77029E029E200478601 /* GasStationDetail */ = {
 			isa = PBXGroup;
 			children = (
-				9382B77129E029F200478601 /* locationDetailView.swift */,
+				9382B77129E029F200478601 /* LocationDetailView.swift */,
 			);
 			path = GasStationDetail;
 			sourceTree = "<group>";
@@ -172,6 +180,7 @@
 		93B4FF542950D44D00F178D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93D5BD6829E42AF60027A9D3 /* Home */,
 				93D5BD4529E194CA0027A9D3 /* Refueling */,
 				9374B56029C9C90300440C4D /* Details */,
 				9374B55D29C9C4FB00440C4D /* Person */,
@@ -190,6 +199,7 @@
 				93B4FF582950D4E000F178D7 /* BaseViewModel.swift */,
 				933B0BA02957A092000993CB /* LocationViewModel.swift */,
 				937D99D42962FC54009EB1E2 /* QrCodeViewModel.swift */,
+				93D5BD6D29E42CD10027A9D3 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -199,8 +209,18 @@
 			children = (
 				93D5BD4629E196FD0027A9D3 /* RefuelingView.swift */,
 				93D5BD4829E1A2D50027A9D3 /* RefuelingSlider.swift */,
+				93D5BD6629E2FDF10027A9D3 /* SelectColumn.swift */,
 			);
 			path = Refueling;
+			sourceTree = "<group>";
+		};
+		93D5BD6829E42AF60027A9D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				93D5BD6929E42B030027A9D3 /* HomeView.swift */,
+				93D5BD6F29E43EC80027A9D3 /* CustomCarousel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		93E8934229623E4C0077BDD0 /* QrCode */ = {
@@ -324,11 +344,14 @@
 				93D5BD4929E1A2D50027A9D3 /* RefuelingSlider.swift in Sources */,
 				93D5BD4729E196FD0027A9D3 /* RefuelingView.swift in Sources */,
 				93B4FF572950D4B800F178D7 /* BaseView.swift in Sources */,
+				93D5BD6A29E42B030027A9D3 /* HomeView.swift in Sources */,
 				93B4FF592950D4E000F178D7 /* BaseViewModel.swift in Sources */,
+				93D5BD7029E43EC80027A9D3 /* CustomCarousel.swift in Sources */,
 				933B0B9F29579FB1000993CB /* LocationMapAnotationView.swift in Sources */,
 				933B0BA82957A27E000993CB /* MapPage.swift in Sources */,
 				93B4FF5B2950E77900F178D7 /* CustomCurveShape.swift in Sources */,
 				93F5A48A2958F6AA00A031B9 /* PromoView.swift in Sources */,
+				93D5BD6E29E42CD10027A9D3 /* UserViewModel.swift in Sources */,
 				933B0BA62957A0F8000993CB /* Location.swift in Sources */,
 				939C6DEC29636E7D00F06C7E /* User.swift in Sources */,
 				936C34CE295A28EB00BCF4F1 /* TrendView.swift in Sources */,
@@ -340,9 +363,10 @@
 				93F5A48F2958FD3900A031B9 /* PromoOpen.swift in Sources */,
 				933B0BA12957A092000993CB /* LocationViewModel.swift in Sources */,
 				93B4FF482950D43B00F178D7 /* ContentView.swift in Sources */,
+				93D5BD6729E2FDF10027A9D3 /* SelectColumn.swift in Sources */,
 				93B4FF462950D43B00F178D7 /* AzsTabBarApp.swift in Sources */,
 				9374B56229C9C91100440C4D /* PersonCard.swift in Sources */,
-				9382B77229E029F200478601 /* locationDetailView.swift in Sources */,
+				9382B77229E029F200478601 /* LocationDetailView.swift in Sources */,
 				93E8934429623E620077BDD0 /* QrCodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

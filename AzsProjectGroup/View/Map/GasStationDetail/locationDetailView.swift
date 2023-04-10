@@ -14,27 +14,32 @@ struct locationDetailView: View {
     let location: Location
     
     var body: some View {
-        ScrollView{
-            VStack{
-                imageSection
-                    .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0 , y: 10)
-                
-                VStack(alignment: .leading, spacing: 16){
-                    titleSection
-                    gasoline
-                    Divider( )
-                    cells
-                    Divider( )
-                    services
-                    CallToUs
+        NavigationView {
+            
+            
+            ScrollView{
+                VStack{
+                    imageSection
+                        .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0 , y: 10)
+                    
+                    VStack(alignment: .leading, spacing: 16){
+                        titleSection
+                        gasoline
+                        Divider( )
+                        cells
+                        
+                        Divider( )
+                        services
+                        CallToUs
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding()
             }
+            .ignoresSafeArea()
+            .background(.ultraThinMaterial)
+            .overlay(backButton, alignment: .topLeading)
         }
-        .ignoresSafeArea()
-        .background(.ultraThinMaterial)
-        .overlay(backButton, alignment: .topLeading)
     }
 }
 
@@ -96,9 +101,8 @@ extension locationDetailView{
     }
     private var cells: some View {
         HStack(alignment: .center){
-            Button {
-                Text("FDS")
-            } label: {
+            NavigationLink(destination: RefuelingSlider ( )) {
+                
                 Text("Заправиться")
                     .foregroundColor(.white)
                     .padding(15)
@@ -106,6 +110,7 @@ extension locationDetailView{
                     .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(red: 0.075, green: 0.108, blue: 0.184)/*@END_MENU_TOKEN@*/)
                     .cornerRadius(10)
             }
+            
         }.frame(maxWidth: .infinity)
             
     }

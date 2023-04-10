@@ -24,8 +24,9 @@ struct MapPage: View {
                 .ignoresSafeArea( )
         }.sheet(item: $vm.sheetLocation,  onDismiss: nil){
             location in locationDetailView(location: location)
-                .presentationDetents([.large, .medium])
+                .presentationDetents(vm.ActiveView == 1 ? [.large] : [.large])
         }
+
     }
 }
 

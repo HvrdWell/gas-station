@@ -10,10 +10,13 @@ import SwiftUI
 struct RefuelingSlider_Previews: PreviewProvider {
     static var previews: some View {
         RefuelingSlider()
+            .environmentObject(LocationViewModel( ))
     }
 }
 
 struct RefuelingSlider: View {
+    @EnvironmentObject private var vm: LocationViewModel
+
     @State var maxHeight: CGFloat = UIScreen.main.bounds.height / 3
     
     //Slider propert
