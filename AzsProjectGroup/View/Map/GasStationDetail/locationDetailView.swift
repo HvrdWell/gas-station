@@ -10,6 +10,7 @@ import MapKit
 struct locationDetailView: View {
     
     @EnvironmentObject private var vm: LocationViewModel
+    @EnvironmentObject private var ordervm: OrderViewModel
     @State private var isTaped = false
     let location: Location
     
@@ -101,7 +102,7 @@ extension locationDetailView{
     }
     private var cells: some View {
         HStack(alignment: .center){
-            NavigationLink(destination: RefuelingSlider ( )) {
+            NavigationLink(destination: SelectColumn()) {
                 
                 Text("Заправиться")
                     .foregroundColor(.white)

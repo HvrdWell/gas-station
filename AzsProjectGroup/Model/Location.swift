@@ -22,15 +22,12 @@ struct Location: Identifiable, Equatable {
     let link: String
     
     
-    //Identifyble
+
     var id: String{
-        // name = "Colosseum"
-        //cityName = "Rome"
-        // id = "ColosseumRome"
         name + cityName
     }
     
-    //Equatable!!!!!
+
     static func == (lhs: Location, rhs: Location) -> Bool {
         lhs.id == rhs.id
     }

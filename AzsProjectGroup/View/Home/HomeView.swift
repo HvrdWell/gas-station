@@ -38,9 +38,9 @@ struct HomeView: View {
     func HeaderView() -> some View {
         HStack{
             VStack(alignment: .leading, spacing: 3){
-                Text("Здравствуйте 🔥")
+                Text("Здравствуйте,")
                     .font(.title)
-                Text("\(userData.name)")
+                Text("\(userData.name) " + "🔥")
                     .font(.title.bold( ) )
             }
             .frame(maxWidth: .infinity, alignment: .leading)

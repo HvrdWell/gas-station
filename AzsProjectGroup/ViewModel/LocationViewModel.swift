@@ -57,7 +57,7 @@ class LocationViewModel: ObservableObject {
             showLocationsList = false
         }
     }
-    
+
     
     func nextButtonPressed( ){
        

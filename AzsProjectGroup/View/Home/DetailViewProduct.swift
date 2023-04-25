@@ -41,7 +41,10 @@ struct DetailView: View {
                                     .fill(.green.opacity(0.1))
                             }
                     }
-                    .padding(.top, 25)
+                    Divider( )
+                    Text(product.description)
+                        .font(.callout)
+                        .multilineTextAlignment(.leading)
                 }
                 .padding(.top, 30)
                 .padding(.bottom, 15)

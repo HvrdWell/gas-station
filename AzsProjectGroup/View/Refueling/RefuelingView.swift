@@ -8,13 +8,47 @@
 import SwiftUI
 
 struct RefuelingView: View {
+    @EnvironmentObject private var vm: LocationViewModel
+    @EnvironmentObject private var ovm: OrderViewModel
+    @State var comments = [Comments]()
+    let column: Column
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(comments) { comment in
+                VStack(alignment: .leading) {
+                    HStack{
+                        Text(comment.nameTypeFuel)
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                        Spacer()
+                        Text(String(format: "%.2f", comment.price) + "₽")
+                            .font(.body)
+                    }
+                }
+            }
+            .onAppear() {
+                if let columnNumber = Int(column.columnNumber) {
+                apiCall(numberofcolumn: columnNumber).getUserComments { comments,error in
+                    if let comments = comments{
+                        self.comments = comments
+                    }else if let error = error{
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            } .navigationTitle("Title")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        HStack {
+                            Spacer()
+                            //Text(vm.loca)
+                            Spacer()
+                        }
+                    }
+                }
+        }
     }
 }
 
-struct RefuelingView_Previews: PreviewProvider {
-    static var previews: some View {
-        RefuelingView()
-    }
-}
+

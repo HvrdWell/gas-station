@@ -17,7 +17,7 @@ struct QrCodeView: View {
         
             NavigationStack {
                     VStack {
-                        TextField("Enter code", text: $text)
+                        TextField("Код", text: $text)
                             .textFieldStyle(.roundedBorder)
                             .padding()
                         
@@ -29,7 +29,6 @@ struct QrCodeView: View {
                       //  Text(User)
                     }
             }.background(.thinMaterial)
-            .background(Image("bronzeBackGround"))
     }
 
 }
