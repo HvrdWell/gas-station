@@ -13,42 +13,45 @@ struct RefuelingView: View {
     @State var comments = [Comments]()
     let column: Column
     var body: some View {
-        NavigationView {
-            List(comments) { comment in
-                VStack(alignment: .leading) {
-                    HStack{
-                        Text(comment.nameTypeFuel)
-                            .font(.subheadline)
-                            .fontWeight(.bold)
-                        Spacer()
-                        Text(String(format: "%.2f", comment.price) + "₽")
-                            .font(.body)
+        VStack{
+            Text("Колонка \(column.columnNumber)").font(.title2).bold()
+            Text("MosOil").foregroundColor(.green).font(.caption)
+            List(comments, id: \.self) { comment in
+                NavigationLink(destination: RefuelingSlider(column: column, nameTypeFuel: comment.nameTypeFuel, price: comment.price)) {
+                    VStack(alignment: .leading) {
+                        HStack{
+                            Text(comment.nameTypeFuel)
+                                .font(.subheadline)
+                                .fontWeight(.bold)
+                            Spacer()
+                            Text(String(format: "%.2f", comment.price) + "₽")
+                                .font(.body)
+                        }
                     }
                 }
             }
             .onAppear() {
                 if let columnNumber = Int(column.columnNumber) {
-                apiCall(numberofcolumn: columnNumber).getUserComments { comments,error in
-                    if let comments = comments{
-                        self.comments = comments
-                    }else if let error = error{
-                        print(error.localizedDescription)
-                    }
-                }
-            }
-            } .navigationTitle("Title")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        HStack {
-                            Spacer()
-                            //Text(vm.loca)
-                            Spacer()
+                    apiCall(numberofcolumn: columnNumber).getUserComments { comments,error in
+                        if let comments = comments{
+                            self.comments = comments
+                        }else if let error = error{
+                            print(error.localizedDescription)
                         }
                     }
                 }
+            }
+            .navigationTitle("Title")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    HStack {
+                        Spacer()
+                        Spacer()
+                    }
+                }
+            }
         }
     }
 }
-
 

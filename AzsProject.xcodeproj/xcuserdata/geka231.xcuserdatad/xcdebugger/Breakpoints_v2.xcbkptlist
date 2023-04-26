@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "217C1CAC-AE45-49F2-A8FE-DCAEF64892C8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AzsProjectGroup/View/Refueling/RefuelingView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "217C1CAC-AE45-49F2-A8FE-DCAEF64892C8 - 52c990069dc16689"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ToolbarContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in AzsProject.RefuelingView.body.getter : some"
-                  moduleName = "AzsProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/View/Refueling/RefuelingView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "217C1CAC-AE45-49F2-A8FE-DCAEF64892C8 - 52c990069dc16689"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ToolbarContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in AzsProject.RefuelingView.body.getter : some"
-                  moduleName = "AzsProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/View/Refueling/RefuelingView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "164">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "C7FB2A1D-6910-4CD5-885B-4A9C2EFB1F39"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -119,17 +71,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A089C2BA-C06F-45D6-B886-9A55D0222667"
+            uuid = "9BBF8995-D707-4634-A68A-F8E7FF50E8D1"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AzsProjectGroup/View/Refueling/RefuelingView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "RefuelingView"
-            landmarkType = "14">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "9BBF8995-D707-4634-A68A-F8E7FF50E8D1 - 309aeb89f754429d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.RefuelingView.body.getter : some"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/View/Refueling/RefuelingView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "9BBF8995-D707-4634-A68A-F8E7FF50E8D1 - 3addef00a5e92690"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (AzsProject.Comments) -&gt; SwiftUI.VStack&lt;SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, SwiftUI.Text)&gt;&gt;&gt; in AzsProject.RefuelingView.body.getter : some"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/View/Refueling/RefuelingView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

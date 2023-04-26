@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct RefuelingSlider_Previews: PreviewProvider {
-    static var previews: some View {
-        RefuelingSlider()
-            .environmentObject(LocationViewModel( ))
-    }
-}
+
 
 struct RefuelingSlider: View {
     @EnvironmentObject private var vm: LocationViewModel
-
+    @EnvironmentObject private var ovm: OrderViewModel
+    @State var comments = [Comments]()
     @State var maxHeight: CGFloat = UIScreen.main.bounds.height / 3
-    
+    @State var totalPrice: Float = 0.0
+    @State var liters: Float = 0.0
+    let column: Column
+    let nameTypeFuel: String
+    let price: Float
     //Slider propert
     @State var sliderProgress: CGFloat = 0
     @State var sliderHeight: CGFloat = 0
@@ -26,19 +26,19 @@ struct RefuelingSlider: View {
     var body: some View{
         VStack(spacing: 50){
             VStack{
-                    Text("АИ-95")
+                    Text(nameTypeFuel)
                         .font(.title)
                         .bold()
-                    Text("Колонка "+"1")
+                Text("Колонка "+"\(column.columnNumber)")
                         .font(.caption)
                         .foregroundColor(.gray)
                 }
                 HStack{
-                    Text("1360"+"₽")
+                    Text(String(format: "%.2f", totalPrice) + "₽")
                         .font(.title3)
                         .bold()
                     Slider
-                    Text("26"+"Л")
+                    Text(String(format: "%.2f", liters) + "л")
                         .font(.title3)
                         .bold()
                         .padding(5)
@@ -68,7 +68,6 @@ extension RefuelingSlider{
                 Text("Максимум")
                     .font(.caption)
                     .foregroundColor(sliderHeight == maxHeight ? .black : .gray )
-              
                 ZStack{
                     ZStack(alignment: .bottom, content:  {
                         
@@ -85,6 +84,7 @@ extension RefuelingSlider{
                     .frame(width: 150, height: maxHeight+20, alignment: .center)
                     .cornerRadius(35)
                     .overlay(
+                        
                         Text("\(Int(sliderProgress * 100))%")
                             .fontWeight(.semibold)
                             .foregroundColor(.black)
@@ -92,7 +92,7 @@ extension RefuelingSlider{
                             .padding(.horizontal, 18)
                             .cornerRadius(10)
                             .padding(.vertical, 30)
-                            .offset(y:  sliderHeight < maxHeight - 105 ? -sliderHeight : -maxHeight + 105)
+                            .offset(y:  sliderHeight < maxHeight - 205 ? -sliderHeight : -maxHeight + 205)
                         
                         ,alignment: .bottom
                     )
@@ -104,7 +104,7 @@ extension RefuelingSlider{
                         
                         sliderHeight = sliderHeight > maxHeight ? maxHeight : sliderHeight
                         
-                        sliderHeight = sliderHeight >= 20 ? sliderHeight : 20
+                        sliderHeight = sliderHeight >= 15 ? sliderHeight : 15
                         
                         let progress = sliderHeight / maxHeight
                         
@@ -120,6 +120,10 @@ extension RefuelingSlider{
                         
                     }))
                 }
+            } .onChange(of: sliderProgress) { _ in
+
+                totalPrice = price * Float(Int(sliderProgress * 100))
+                liters = totalPrice / price
             }
         }
     }

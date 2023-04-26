@@ -40,7 +40,7 @@ struct SelectColumn: View {
 
 struct SelectColumn_Previews: PreviewProvider {
     static var previews: some View {
-        SelectColumn(columns: [Column(columnNumber: "0", typeFuels: [])])
+        SelectColumn()
     }
 }
 extension SelectColumn{
