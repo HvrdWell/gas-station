@@ -8,21 +8,28 @@
 import SwiftUI
 
 struct PersonView: View {
+    @EnvironmentObject var viewRouter: ViewRouter
+
+
     var body: some View {
-        NavigationView{
-            ScrollView(){
-                VStack(spacing: 3){
-                    
-                    
+        NavigationView {
+            VStack {
+                Button {
+                    viewRouter.logout()
+                } label: {
+                    Text("Выйти")
                 }
-            }.navigationBarHidden(false)
-                .navigationTitle("Личный кабинет")
-                .font(.system(.title,design: .rounded))
-                .fontWeight(.bold)
-                .foregroundColor(.black)
+            }
+        }
+            .padding()
+            .navigationBarHidden(false)
+            .navigationTitle("Личный кабинет")
+            .font(.system(.title, design: .rounded))
+            .fontWeight(.bold)
+            .foregroundColor(.black)
         }
     }
-}
+
 
 struct PersonView_Previews: PreviewProvider {
     static var previews: some View {

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BaseView: View {
+    @EnvironmentObject var viewRouter: ViewRouter
     @StateObject private var vm = LocationViewModel()
     @StateObject var baseData = BaseViewModel( )
     @State private var showSheet = false
@@ -61,8 +62,9 @@ extension BaseView{
                 .tag(Tab.trends)
             MapPage() .environmentObject(vm)
                 .tag(Tab.locat)
-            Text("person")
+            PersonView()
                 .tag(Tab.Person)
+
         }
         .onReceive(NotificationCenter.default.publisher(for: .init("SHOWTABBAR"))){ _ in
             showTabBar = true

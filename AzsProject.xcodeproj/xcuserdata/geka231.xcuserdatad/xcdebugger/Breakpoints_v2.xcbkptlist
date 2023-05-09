@@ -116,5 +116,524 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A09D5D1-7768-4458-AE01-9DB1CDEDB1C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/api/SendOrderToApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "sendOrderToAPI(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4A09D5D1-7768-4458-AE01-9DB1CDEDB1C9 - aa31d48fc0179869"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.SendOrderToApi.sendOrderToAPI(AzsProject.OrderData) -&gt; ()"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/api/SendOrderToApi.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "4A09D5D1-7768-4458-AE01-9DB1CDEDB1C9 - aa31d48fc0179869"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.SendOrderToApi.sendOrderToAPI(AzsProject.OrderData) -&gt; ()"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/api/SendOrderToApi.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "440">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59EFC0B3-A226-43D8-BCBF-185034C72EEE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/View/Refueling/RefuelingSlider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "PayButton"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10534BD5-2DB2-4A76-82E8-5FDA0C2B71AE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/ViewModel/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EC65232-6984-4D85-80D1-05051DD2DC2C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/api/AuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "login(loginData:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FEC9C8B-6D23-4191-9070-C32B76D9E473"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/View/Auth/OnboardingStart.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1BD19801-D025-4897-9D7B-11B9366FBD63"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/api/AuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "login(loginData:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1BD19801-D025-4897-9D7B-11B9366FBD63 - da6f9460d6db20bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AzsProject.AuthService.login(loginData: AzsProject.LoginData, completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/api/AuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "848">
+               </Location>
+               <Location
+                  uuid = "1BD19801-D025-4897-9D7B-11B9366FBD63 - da6f9460d6db20bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AzsProject.AuthService.login(loginData: AzsProject.LoginData, completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/api/AuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "896">
+               </Location>
+               <Location
+                  uuid = "1BD19801-D025-4897-9D7B-11B9366FBD63 - da6f9460d6db20bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AzsProject.AuthService.login(loginData: AzsProject.LoginData, completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/api/AuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1316">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBE2FB35-E77C-4951-8A97-0E3CDDFA9FE9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/api/AuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "login(loginData:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F09C1DA8-2FA1-44FA-B2FC-574B281152AA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/api/AuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "login(loginData:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "389A12D9-685D-4F8C-A50A-1D82E3CAC3FD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/ViewModel/ViewRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "setUidDocListener(uid:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "389A12D9-685D-4F8C-A50A-1D82E3CAC3FD - ddb50673667d2535"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.setUidDocListener(uid: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "389A12D9-685D-4F8C-A50A-1D82E3CAC3FD - ddb50673667d2535"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.setUidDocListener(uid: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E9EABAE-8249-458E-80DC-38A901EBA706"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/ViewModel/ViewRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "setUidDocListener(uid:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F858C32A-7914-47CB-BCF2-065331B064CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/ViewModel/ViewRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewRouter"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F858C32A-7914-47CB-BCF2-065331B064CA - 87a893c8b07df49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of AzsProject.ViewRouter.token : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "F858C32A-7914-47CB-BCF2-065331B064CA - 490e64a25067c897"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.token.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "F858C32A-7914-47CB-BCF2-065331B064CA - 5c5986d2fb0ad8cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.token.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "F858C32A-7914-47CB-BCF2-065331B064CA - 29042865d22db49e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.token.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "F858C32A-7914-47CB-BCF2-065331B064CA - e58011d823ce8494"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.token.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "F858C32A-7914-47CB-BCF2-065331B064CA - 246674900ad21d48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.$token.getter : Combine.Published&lt;Swift.Optional&lt;Swift.String&gt;&gt;.Publisher"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "F858C32A-7914-47CB-BCF2-065331B064CA - 1faf6a7e344f2944"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.$token.setter : Combine.Published&lt;Swift.Optional&lt;Swift.String&gt;&gt;.Publisher"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "F858C32A-7914-47CB-BCF2-065331B064CA - 4826a3101ffa49b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.$token.modify : Combine.Published&lt;Swift.Optional&lt;Swift.String&gt;&gt;.Publisher"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "F858C32A-7914-47CB-BCF2-065331B064CA - 7af22783942b4b47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.$token.modify : Combine.Published&lt;Swift.Optional&lt;Swift.String&gt;&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "F858C32A-7914-47CB-BCF2-065331B064CA - eaad6592bdbdcb1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.init() -&gt; AzsProject.ViewRouter"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A188A57B-544C-44A6-A9FF-0CA8BD86A552"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/ViewModel/ViewRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A188A57B-544C-44A6-A9FF-0CA8BD86A552 - eaad6592bdbdca70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.init() -&gt; AzsProject.ViewRouter"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "496">
+               </Location>
+               <Location
+                  uuid = "A188A57B-544C-44A6-A9FF-0CA8BD86A552 - eaad6592bdbdca70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AzsProject.ViewRouter.init() -&gt; AzsProject.ViewRouter"
+                  moduleName = "AzsProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/geka231/Developer/Azs/AzsProjectGroup/ViewModel/ViewRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "676">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E01CB7B1-CDFA-424C-BD28-76395BDC756F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/ViewModel/OnboardingEntryViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "verifyCode()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FDB3C34-72C5-4819-982D-2C2254E52E06"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AzsProjectGroup/ViewModel/ViewRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -6,21 +6,33 @@
 //
 
 import SwiftUI
-import FirebaseCore
 @main
 struct AzsTabBarApp: App {
-    //@StateObject private var vmQR = LocationViewModel()
-//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @ObservedObject var viewRouter: ViewRouter
+    
+    init() {
+        self.viewRouter = ViewRouter()
+
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().isTranslucent = true
+        
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if viewRouter.currentView == .main {
+                BaseView().environmentObject(viewRouter)
+            } else {
+                NavigationView {
+                    switch viewRouter.currentView {
+                    case .onboarding, .accountSetup:
+                        OnboardingStart().environmentObject(viewRouter)
+                    case .main:
+                        BaseView()
+                    }
+                }
+            }
         }
     }
-//    class AppDelegate: NSObject, UIApplicationDelegate {
-//      func application(_ application: UIApplication,
-//                       didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-//          FirebaseApp.configure()
-//        return true
-//      }
-//    }
 }

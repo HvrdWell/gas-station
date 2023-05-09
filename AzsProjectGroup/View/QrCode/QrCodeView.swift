@@ -10,7 +10,6 @@ import CoreImage.CIFilterBuiltins
 import SwiftUI
 struct QrCodeView: View {
     @State private var text = ""
-   // let userModel = 
 
     var body: some View {
 

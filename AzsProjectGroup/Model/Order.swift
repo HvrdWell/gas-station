@@ -7,13 +7,11 @@
 
 import Foundation
 
-struct Order {
-  //  var orderId: Int
-    var idColumns: Int
-    var date: Date
-    var idUser: Int
-    var status: String
-    var totalPrice: Float
-    
+struct OrderData: Codable {
+    let orderId: Int
+    let idColumns: Int
+    let idUser: Int
+    let status: String
+    let totalPrice: Float
 }
 

@@ -10,6 +10,8 @@ import SwiftUI
 
 
 struct RefuelingSlider: View {
+    private let sendOrderToApi = SendOrderToApi()
+    
     @EnvironmentObject private var vm: LocationViewModel
     @EnvironmentObject private var ovm: OrderViewModel
     @State var comments = [Comments]()
@@ -55,7 +57,13 @@ extension RefuelingSlider{
     private var PayButton: some View{
         VStack{
             Button {
-                print("das")
+                guard let columnNumber = Int(column.columnNumber) else {
+                                    // Handle invalid input or display an error message
+                                    return
+                                }
+                let order = OrderData(orderId: 7, idColumns: columnNumber, idUser: 4,
+                                      status: "Выполнен"  ,totalPrice: 600)
+                sendOrderToApi.sendOrderToAPI(order)
             } label: {
                 Circle().foregroundColor(Color("sliderButtonPay")).frame(width: 65, height: 65)
             }
