@@ -1,18 +1,52 @@
-# AZS Project
-<p align="center">AZS Project</p>
+# Gas station "MosOil" project
+
+
 
 <p align="center">
-in development
-</p>
 
+<p align="center">
+    <a href="https://swift.org/">
+        <img src="https://img.shields.io/badge/Swift-5.8-orange.svg?style=flat"
+             alt="Swift 5.8">
+    </a>
+
+
+
+## Toolkit
+
+- SwiftUI
+
+## About proj
+
+Mobile application from the complex for auto of the MosOil gas station
+
+## What need to start?
+
+To work with the application, it requires the usage of hosting in conjunction with MySQL 8.0.33 database and an API created using ASP.NET technology. The application involves interaction with the API provided by MTS exolve.
+
+## Program functions
+
+-Auth and registation by sms code;
+
+-Auto generation qr-code;
+
+-Clients can change profile info;
+
+-There is a feature to send a receipt via email;
+
+-Clients can choose fuel and purchase it through the mobile app.
+
+## Auth
 <p float="left" align="center">
 <img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/6b7ad67e-8965-46de-8750-64e3e2baff82">
 
 <img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/f6020a3a-e391-4dbf-aa9c-ee6e8929cced">
 
 <img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/a1bb34b9-7daa-4bc4-ba74-7fe963095104">
+</p>
 
-
+## Main view for clients
+<p float="left" align="center">
 <img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/b0e46089-a414-4f56-812f-38d3d20c545e">
 
 
