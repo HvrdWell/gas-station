@@ -2,14 +2,14 @@
 //  SendOrderToApi.swift
 //  AzsProject
 //
-//  Created by geka231 on 27.04.2023.
+//  Created by geka231 on 18.05.2023.
 //
 
 import Foundation
 
 class SendOrderToApi {
     func sendOrderToAPI(_ order: OrderData) {
-        guard let url = URL(string: "http://localhost:5145/api/Order") else {
+        guard let url = URL(string: "http://localhost:5145/api/order/order") else {
             // Handle invalid URL
             return
         }

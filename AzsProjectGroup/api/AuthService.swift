@@ -40,10 +40,10 @@ class AuthService: AuthServiceProtocol {
                    let tokenString = token["Token"] as? String {
                     completion(.success(tokenString))
                 } else {
-                    completion(.failure(NSError(domain: "AuthService", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid response data"])))
+                    completion(.failure(NSError(domain: "AuthService", code: -1, userInfo: [NSLocalizedDescriptionKey: "Неправильные данные"])))
                 }
             default:
-                completion(.failure(NSError(domain: "AuthService", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "Failed to login"])))
+                completion(.failure(NSError(domain: "AuthService", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "Ошибка авторизации"])))
             }
         }
         task.resume()

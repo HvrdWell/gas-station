@@ -7,11 +7,14 @@
 
 import Foundation
 
-struct OrderData: Codable {
-    let orderId: Int
+struct OrderDTO: Codable {
+    let nameTypeFuel: String
     let idColumns: Int
     let idUser: Int
-    let status: String
+    let totalCountFuel: Float
     let totalPrice: Float
+    let scores: Int
+    let email: String
 }
+
 

@@ -12,15 +12,14 @@ struct HomeView: View {
     @State var currentIndex: Int = 0
     @State var showDetailView: Bool = false
     @State var currentDetailProduct: Product?
+    @StateObject private var viewModel = QrCodeViewModel()
     @Namespace var animation
     let userData : userModel
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(spacing: 15){
                 HeaderView()
-                
                 SearchView()
-                
                 ProductView()
             }
             .padding(15)
@@ -32,6 +31,9 @@ struct HomeView: View {
                     .transition(.asymmetric(insertion: .identity, removal: .offset(x: 0.1)))
             }
         }
+        .onAppear {
+                viewModel.createCardAndVerifyToken()
+            }
     }
     
     @ViewBuilder
@@ -40,36 +42,25 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 3){
                 Text("Здравствуйте,")
                     .font(.title)
-                Text("\(userData.name) " + "🔥")
+                Text("\(viewModel.userName) " + "🔥")
                     .font(.title.bold( ) )
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-            
-            Button{
-                
-            }label: {
-                Image(systemName: "bell")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.black)
-                    .padding(10)
-                    .background{
-                        RoundedRectangle(cornerRadius: 10,style: .continuous)
-                            .fill(.white)
-                    }
-                    .overlay(alignment: .topTrailing) {
-                        Text("1")
-                            .font(.caption)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .padding(6)
-                            .background{
-                                Circle( )
-                                    .fill(Color.green)
-                            }
-                            .offset(x: 5, y: -10)
-                    }
+            ZStack{
+                HStack{
+                    Text("\(viewModel.scoresCard)").bold()
+                    Image("coins")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 25, height: 25)
+                }
             }
+            .padding(2)
+            .padding(.horizontal, 5)
+            .background(Color("GoldenBonus"))
+            .cornerRadius(10)
+                
+                
         }
     }
     
@@ -77,33 +68,19 @@ struct HomeView: View {
     func SearchView( )->some View{
         HStack(spacing: 15) {
             HStack(spacing: 15) {
-                Image("Search")
+                Image(systemName: "cart")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 24, height: 24)
                 Divider()
-                TextField("Поиск", text: .constant(""))
+                TextField("Наша продукция", text: .constant(""))
             }
             .padding(15)
             .background {
                 RoundedRectangle(cornerRadius: 10,style: .continuous)
                     .fill(.white)
             }
-            Button {
-                
-            } label: {
-                Image("filter")
-                    .resizable()
-                    .renderingMode(.template)
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.white)
-                    .frame(width: 22, height: 22)
-                    .padding(15)
-                    .background {
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(.black)
-                    }
-            }
+            
         }.padding(.top, 15)
     }
         @ViewBuilder
@@ -120,11 +97,7 @@ struct HomeView: View {
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
-                    Button("Показать"){
-                        
-                    }
-                    .font(.caption)
-                    .foregroundColor(.gray)
+
                 }
                 .padding(.leading,5)
                 
@@ -193,17 +166,7 @@ struct HomeView: View {
                     Button {
                         print("321")
                     } label: {
-                        Image(systemName: "cart")
-                            .resizable()
-                            .renderingMode(.template)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 22, height: 22)
-                            .foregroundColor(.white)
-                            .frame(width: 45, height: 45)
-                            .background {
-                                RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                    .fill(.black)
-                            }
+
                     }
 
                 }

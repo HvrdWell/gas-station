@@ -47,7 +47,7 @@ struct OnboardingCodeEntry: View {
     
     var headerView: some View {
         VStack(spacing: 15) {
-            Text("Этап 2/2")
+            Text("Шаг 2/2")
                 .font(.medTwelve)
                 .foregroundColor(.darkMustard)
                 .tracking(1.5)

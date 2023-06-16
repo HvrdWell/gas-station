@@ -10,7 +10,6 @@ import SwiftUI
 
 
 struct RefuelingSlider: View {
-    private let sendOrderToApi = SendOrderToApi()
     
     @EnvironmentObject private var vm: LocationViewModel
     @EnvironmentObject private var ovm: OrderViewModel
@@ -21,7 +20,6 @@ struct RefuelingSlider: View {
     let column: Column
     let nameTypeFuel: String
     let price: Float
-    //Slider propert
     @State var sliderProgress: CGFloat = 0
     @State var sliderHeight: CGFloat = 0
     @State var lastDragValue: CGFloat = 0
@@ -56,17 +54,14 @@ struct RefuelingSlider: View {
 extension RefuelingSlider{
     private var PayButton: some View{
         VStack{
-            Button {
-                guard let columnNumber = Int(column.columnNumber) else {
-                                    // Handle invalid input or display an error message
-                                    return
-                                }
-                let order = OrderData(orderId: 7, idColumns: columnNumber, idUser: 4,
-                                      status: "Выполнен"  ,totalPrice: 600)
-                sendOrderToApi.sendOrderToAPI(order)
-            } label: {
-                Circle().foregroundColor(Color("sliderButtonPay")).frame(width: 65, height: 65)
-            }
+            NavigationLink(destination: OrderView(totalPrice: totalPrice, liters: liters, column: column, nameTypeFuel: nameTypeFuel, price: price)) {
+                    Circle()
+                        .foregroundColor(Color("sliderButtonPay"))
+                        .frame(width: 65, height: 65)
+                        .opacity(sliderProgress == 0 ? 0.1 : 1.0)
+                }
+            .disabled(sliderProgress == 0)
+            
             Text("Оплатить").font(.title3)
         }
     }

@@ -118,6 +118,7 @@ extension BaseView{
         }.offset(y: -22)
             .sheet(isPresented: $showSheet, content: {
             QrCodeView() .environmentObject(LocationViewModel())
+                    .background(Color.clear)
         })
     }
 }

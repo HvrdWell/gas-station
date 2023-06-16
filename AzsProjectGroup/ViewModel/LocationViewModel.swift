@@ -10,22 +10,18 @@ import MapKit
 import SwiftUI
 
 class LocationViewModel: ObservableObject {
-    //all loaded locations
     @Published var locations: [Location]
     @State var ActiveView: Int = 1
-    //Current location on map
     @Published var mapLocation: Location{
         didSet{
             updateMapRegion(location: mapLocation)
         }
     }
-    //current region on map
     @Published var mapRegion:MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-    //show list of locations
     @Published var showLocationsList: Bool = false
-    
-    //Show location detail via sheet
+    @Published var sheetShow: Bool = false
+
     @Published var sheetLocation: Location? = nil
     @Published var sheetFuelLocation: Location? = nil
     init() {
@@ -41,6 +37,10 @@ class LocationViewModel: ObservableObject {
     }
     func openFuelingView( ) {
         sheetFuelLocation = sheetLocation
+        sheetLocation = nil
+    }
+    func closeFuelingView(){
+        sheetFuelLocation = nil
         sheetLocation = nil
     }
     func CurrentView(page: Int)   {
@@ -67,14 +67,13 @@ class LocationViewModel: ObservableObject {
         }
         let nextIndex = currentIndex + 1
         guard locations.indices.contains(nextIndex) else {
-            //Next index is not valid
-            //restart from 0
+
+
             guard let firstLocation = locations.first else { return }
             showNextLocation(Location:  firstLocation)
             return
         }
         
-        //Next index IS valid
         let nextLocation = locations[nextIndex]
         showNextLocation(Location: nextLocation)
     }

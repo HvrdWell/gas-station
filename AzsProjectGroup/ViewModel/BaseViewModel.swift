@@ -8,7 +8,7 @@
 import SwiftUI
 
 class BaseViewModel: ObservableObject {
-    //Tab bar...
+
     @Published var currentTab: Tab = .Home
 }
 

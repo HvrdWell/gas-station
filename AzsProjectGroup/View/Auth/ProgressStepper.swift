@@ -17,10 +17,10 @@ struct ProgressStepper: View {
             GeometryReader { geo in
             RoundedRectangle(cornerRadius: 4)
                 .frame(height: 8)
-                .foregroundColor(.blue)
+                .foregroundColor(Color("sliderButtonPay"))
             RoundedRectangle(cornerRadius: 4)
                 .frame(width: geo.size.width * (CGFloat(fill)/CGFloat(range.upperBound)), height: 8, alignment: .leading)
-                .foregroundColor(.blue)
+                .foregroundColor(.green)
             }
         }
     }

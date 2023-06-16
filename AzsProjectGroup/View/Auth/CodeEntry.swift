@@ -34,7 +34,7 @@ struct CodeEntry: View {
         Text(codeMaskStr)
             .tracking(4.0)
             .font(Font.custom("Rubik-Bold", size: 40))
-            .foregroundColor(.blue)
+            .foregroundColor(.green)
     }
     
     

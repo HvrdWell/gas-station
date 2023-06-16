@@ -15,7 +15,7 @@ struct BigButton: View {
     var body: some View {
             ZStack {
                 RoundedRectangle(cornerRadius: 16)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.green)
                     .frame(height: 56, alignment: .center)
                 HStack {
                     if let btnImage = img {

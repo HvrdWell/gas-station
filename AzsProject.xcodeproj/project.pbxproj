@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9301EB1129FAA63B00FF83E8 /* SendOrderToApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301EB1029FAA63B00FF83E8 /* SendOrderToApi.swift */; };
 		930403872A05B58A00A4C46A /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930403862A05B58A00A4C46A /* LoginData.swift */; };
 		930403892A05B7DA00A4C46A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930403882A05B7DA00A4C46A /* LoginViewModel.swift */; };
 		9304038B2A05B80E00A4C46A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304038A2A05B80E00A4C46A /* AuthService.swift */; };
@@ -50,6 +49,8 @@
 		937D99D52962FC54009EB1E2 /* QrCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D99D42962FC54009EB1E2 /* QrCodeViewModel.swift */; };
 		9382B76F29DF4CB100478601 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9382B76E29DF4CB100478601 /* LocationManager.swift */; };
 		9382B77229E029F200478601 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9382B77129E029F200478601 /* LocationDetailView.swift */; };
+		9397BD882A0AC7C40003B138 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9397BD872A0AC7C40003B138 /* DataFetcher.swift */; };
+		9397BD8A2A0AD2720003B138 /* APIManagerForQrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9397BD892A0AD2720003B138 /* APIManagerForQrCode.swift */; };
 		939C6DEC29636E7D00F06C7E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939C6DEB29636E7D00F06C7E /* User.swift */; };
 		939C6DEE2963731C00F06C7E /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 939C6DED2963731C00F06C7E /* GoogleService-Info-2.plist */; };
 		939C6DF1296373FE00F06C7E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 939C6DF0296373FE00F06C7E /* FirebaseAnalytics */; };
@@ -63,6 +64,11 @@
 		93B4FF572950D4B800F178D7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF562950D4B800F178D7 /* BaseView.swift */; };
 		93B4FF592950D4E000F178D7 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF582950D4E000F178D7 /* BaseViewModel.swift */; };
 		93B4FF5B2950E77900F178D7 /* CustomCurveShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4FF5A2950E77900F178D7 /* CustomCurveShape.swift */; };
+		93B81ECA2A156CD10072E1AC /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B81EC92A156CD10072E1AC /* OrderView.swift */; };
+		93BD74352A0C1E80008BC872 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 93BD74342A0C1E80008BC872 /* Lottie */; };
+		93BD74372A0C1EB3008BC872 /* carAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BD74362A0C1EB3008BC872 /* carAnimation.json */; };
+		93BD74392A0C1FA0008BC872 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD74382A0C1FA0008BC872 /* LottieView.swift */; };
+		93BD743B2A0C45BF008BC872 /* CarAround.json in Resources */ = {isa = PBXBuildFile; fileRef = 93BD743A2A0C45BF008BC872 /* CarAround.json */; };
 		93D5BD4729E196FD0027A9D3 /* RefuelingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5BD4629E196FD0027A9D3 /* RefuelingView.swift */; };
 		93D5BD4929E1A2D50027A9D3 /* RefuelingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5BD4829E1A2D50027A9D3 /* RefuelingSlider.swift */; };
 		93D5BD6729E2FDF10027A9D3 /* SelectColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5BD6629E2FDF10027A9D3 /* SelectColumn.swift */; };
@@ -76,10 +82,20 @@
 		93F5A48A2958F6AA00A031B9 /* PromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5A4892958F6AA00A031B9 /* PromoView.swift */; };
 		93F5A48C2958F6F700A031B9 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5A48B2958F6F700A031B9 /* Promo.swift */; };
 		93F5A48F2958FD3900A031B9 /* PromoOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5A48E2958FD3900A031B9 /* PromoOpen.swift */; };
+		93FBE4BA2A376F49004BB473 /* cardOfPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBE4B92A376F49004BB473 /* cardOfPerson.swift */; };
+		93FBE4BC2A3795C8004BB473 /* EditUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBE4BB2A3795C8004BB473 /* EditUser.swift */; };
+		93FBE4BE2A38C2D2004BB473 /* UserUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBE4BD2A38C2D2004BB473 /* UserUpdate.swift */; };
+		93FBE4C02A38CB8B004BB473 /* EditUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBE4BF2A38CB8B004BB473 /* EditUserViewModel.swift */; };
+		93FBE4C42A39019A004BB473 /* EditUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBE4C32A39019A004BB473 /* EditUserRequest.swift */; };
+		93FBE4C82A399C43004BB473 /* APIManagerForEditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBE4C72A399C43004BB473 /* APIManagerForEditProfile.swift */; };
+		93FBE4CA2A39AAC3004BB473 /* CallInfoAboutUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBE4C92A39AAC3004BB473 /* CallInfoAboutUser.swift */; };
+		93FBE4CC2A39E7C0004BB473 /* FuelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBE4CB2A39E7C0004BB473 /* FuelManager.swift */; };
+		93FBE4CE2A39F43C004BB473 /* PromoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBE4CD2A39F43C004BB473 /* PromoViewModel.swift */; };
+		93FBE4D02A39F4A9004BB473 /* PromoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FBE4CF2A39F4A9004BB473 /* PromoCard.swift */; };
+		93FC32092A1FDE6F00C1D3D1 /* APIManagerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC32082A1FDE6F00C1D3D1 /* APIManagerOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9301EB1029FAA63B00FF83E8 /* SendOrderToApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendOrderToApi.swift; sourceTree = "<group>"; };
 		930403862A05B58A00A4C46A /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		930403882A05B7DA00A4C46A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		9304038A2A05B80E00A4C46A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -121,6 +137,8 @@
 		937D99D42962FC54009EB1E2 /* QrCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeViewModel.swift; sourceTree = "<group>"; };
 		9382B76E29DF4CB100478601 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		9382B77129E029F200478601 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		9397BD872A0AC7C40003B138 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		9397BD892A0AD2720003B138 /* APIManagerForQrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerForQrCode.swift; sourceTree = "<group>"; };
 		939C6DEB29636E7D00F06C7E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		939C6DED2963731C00F06C7E /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		93B4FF422950D43B00F178D7 /* AzsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +149,10 @@
 		93B4FF562950D4B800F178D7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		93B4FF582950D4E000F178D7 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		93B4FF5A2950E77900F178D7 /* CustomCurveShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurveShape.swift; sourceTree = "<group>"; };
+		93B81EC92A156CD10072E1AC /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		93BD74362A0C1EB3008BC872 /* carAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carAnimation.json; sourceTree = "<group>"; };
+		93BD74382A0C1FA0008BC872 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		93BD743A2A0C45BF008BC872 /* CarAround.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CarAround.json; sourceTree = "<group>"; };
 		93D5BD4629E196FD0027A9D3 /* RefuelingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefuelingView.swift; sourceTree = "<group>"; };
 		93D5BD4829E1A2D50027A9D3 /* RefuelingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefuelingSlider.swift; sourceTree = "<group>"; };
 		93D5BD6629E2FDF10027A9D3 /* SelectColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectColumn.swift; sourceTree = "<group>"; };
@@ -144,6 +166,17 @@
 		93F5A4892958F6AA00A031B9 /* PromoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoView.swift; sourceTree = "<group>"; };
 		93F5A48B2958F6F700A031B9 /* Promo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
 		93F5A48E2958FD3900A031B9 /* PromoOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoOpen.swift; sourceTree = "<group>"; };
+		93FBE4B92A376F49004BB473 /* cardOfPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardOfPerson.swift; sourceTree = "<group>"; };
+		93FBE4BB2A3795C8004BB473 /* EditUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUser.swift; sourceTree = "<group>"; };
+		93FBE4BD2A38C2D2004BB473 /* UserUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdate.swift; sourceTree = "<group>"; };
+		93FBE4BF2A38CB8B004BB473 /* EditUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserViewModel.swift; sourceTree = "<group>"; };
+		93FBE4C32A39019A004BB473 /* EditUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserRequest.swift; sourceTree = "<group>"; };
+		93FBE4C72A399C43004BB473 /* APIManagerForEditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerForEditProfile.swift; sourceTree = "<group>"; };
+		93FBE4C92A39AAC3004BB473 /* CallInfoAboutUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallInfoAboutUser.swift; sourceTree = "<group>"; };
+		93FBE4CB2A39E7C0004BB473 /* FuelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelManager.swift; sourceTree = "<group>"; };
+		93FBE4CD2A39F43C004BB473 /* PromoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoViewModel.swift; sourceTree = "<group>"; };
+		93FBE4CF2A39F4A9004BB473 /* PromoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCard.swift; sourceTree = "<group>"; };
+		93FC32082A1FDE6F00C1D3D1 /* APIManagerOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerOrder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +189,7 @@
 				939C6DF5296373FE00F06C7E /* FirebaseDatabase in Frameworks */,
 				939C6DF7296373FE00F06C7E /* FirebaseStorage in Frameworks */,
 				936C34D1295A52AE00BCF4F1 /* ScalingHeaderScrollView in Frameworks */,
+				93BD74352A0C1E80008BC872 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +199,8 @@
 		930403922A08582C00A4C46A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				93BD743A2A0C45BF008BC872 /* CarAround.json */,
+				93BD74362A0C1EB3008BC872 /* carAnimation.json */,
 				930403932A08583A00A4C46A /* PhoneCountryCodes.json */,
 			);
 			path = Resources;
@@ -186,10 +222,15 @@
 			children = (
 				9308370729F73D600086200A /* commentViewModel.swift */,
 				9308370929F73D680086200A /* APIManager.swift */,
-				9301EB1029FAA63B00FF83E8 /* SendOrderToApi.swift */,
 				9364A5652A0473340082F21C /* AuthManager.swift */,
 				9304038A2A05B80E00A4C46A /* AuthService.swift */,
 				930403B82A09396500A4C46A /* NumberService.swift */,
+				9397BD872A0AC7C40003B138 /* DataFetcher.swift */,
+				9397BD892A0AD2720003B138 /* APIManagerForQrCode.swift */,
+				93FC32082A1FDE6F00C1D3D1 /* APIManagerOrder.swift */,
+				93FBE4C72A399C43004BB473 /* APIManagerForEditProfile.swift */,
+				93FBE4C92A39AAC3004BB473 /* CallInfoAboutUser.swift */,
+				93FBE4CB2A39E7C0004BB473 /* FuelManager.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -222,6 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				9374B55E29C9C52400440C4D /* PersonView.swift */,
+				93FBE4B92A376F49004BB473 /* cardOfPerson.swift */,
+				93FBE4BB2A3795C8004BB473 /* EditUser.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -274,6 +317,7 @@
 				93B4FF492950D43C00F178D7 /* Assets.xcassets */,
 				93B4FF4B2950D43C00F178D7 /* Preview Content */,
 				93D5BD7529E49B9C0027A9D3 /* CustomCorner.swift */,
+				93BD74382A0C1FA0008BC872 /* LottieView.swift */,
 			);
 			path = AzsProjectGroup;
 			sourceTree = "<group>";
@@ -301,6 +345,9 @@
 				930403862A05B58A00A4C46A /* LoginData.swift */,
 				930403B22A085B0800A4C46A /* WindowKey.swift */,
 				930403B62A0938A200A4C46A /* NumberAuth.swift */,
+				93FBE4BD2A38C2D2004BB473 /* UserUpdate.swift */,
+				93FBE4C32A39019A004BB473 /* EditUserRequest.swift */,
+				93FBE4CF2A39F4A9004BB473 /* PromoCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,6 +380,8 @@
 				930403882A05B7DA00A4C46A /* LoginViewModel.swift */,
 				930403972A0858B100A4C46A /* OnboardingEntryViewModel.swift */,
 				930403B42A0864C700A4C46A /* ViewRouter.swift */,
+				93FBE4BF2A38CB8B004BB473 /* EditUserViewModel.swift */,
+				93FBE4CD2A39F43C004BB473 /* PromoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -343,6 +392,7 @@
 				93D5BD4629E196FD0027A9D3 /* RefuelingView.swift */,
 				93D5BD4829E1A2D50027A9D3 /* RefuelingSlider.swift */,
 				93D5BD6629E2FDF10027A9D3 /* SelectColumn.swift */,
+				93B81EC92A156CD10072E1AC /* OrderView.swift */,
 			);
 			path = Refueling;
 			sourceTree = "<group>";
@@ -415,6 +465,7 @@
 				939C6DF2296373FE00F06C7E /* FirebaseAuth */,
 				939C6DF4296373FE00F06C7E /* FirebaseDatabase */,
 				939C6DF6296373FE00F06C7E /* FirebaseStorage */,
+				93BD74342A0C1E80008BC872 /* Lottie */,
 			);
 			productName = AzsTabBar;
 			productReference = 93B4FF422950D43B00F178D7 /* AzsProject.app */;
@@ -447,6 +498,7 @@
 			packageReferences = (
 				936C34CF295A52AE00BCF4F1 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
 				939C6DEF296373FE00F06C7E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				93BD74332A0C1E80008BC872 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 93B4FF432950D43B00F178D7 /* Products */;
 			projectDirPath = "";
@@ -462,6 +514,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93BD743B2A0C45BF008BC872 /* CarAround.json in Resources */,
+				93BD74372A0C1EB3008BC872 /* carAnimation.json in Resources */,
 				93B4FF4D2950D43C00F178D7 /* Preview Assets.xcassets in Resources */,
 				93B4FF4A2950D43C00F178D7 /* Assets.xcassets in Resources */,
 				930403942A08583A00A4C46A /* PhoneCountryCodes.json in Resources */,
@@ -477,16 +531,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				93D5BD4929E1A2D50027A9D3 /* RefuelingSlider.swift in Sources */,
+				93FC32092A1FDE6F00C1D3D1 /* APIManagerOrder.swift in Sources */,
+				93B81ECA2A156CD10072E1AC /* OrderView.swift in Sources */,
 				9308370329F73CF00086200A /* Fuel.swift in Sources */,
+				93FBE4C82A399C43004BB473 /* APIManagerForEditProfile.swift in Sources */,
 				930403AD2A085A3600A4C46A /* OnboardingPhoneEntry.swift in Sources */,
 				93D5BD4729E196FD0027A9D3 /* RefuelingView.swift in Sources */,
+				93FBE4CA2A39AAC3004BB473 /* CallInfoAboutUser.swift in Sources */,
 				9308371029F743E30086200A /* OrderViewModel.swift in Sources */,
 				93B4FF572950D4B800F178D7 /* BaseView.swift in Sources */,
 				930403A22A08596200A4C46A /* ColorExtension.swift in Sources */,
+				93FBE4CC2A39E7C0004BB473 /* FuelManager.swift in Sources */,
 				930403892A05B7DA00A4C46A /* LoginViewModel.swift in Sources */,
+				93FBE4D02A39F4A9004BB473 /* PromoCard.swift in Sources */,
 				93D5BD6A29E42B030027A9D3 /* HomeView.swift in Sources */,
 				930403962A08587E00A4C46A /* ProgressStepper.swift in Sources */,
 				930403982A0858B100A4C46A /* OnboardingEntryViewModel.swift in Sources */,
+				93BD74392A0C1FA0008BC872 /* LottieView.swift in Sources */,
 				93B4FF592950D4E000F178D7 /* BaseViewModel.swift in Sources */,
 				93D5BD7029E43EC80027A9D3 /* CustomCarousel.swift in Sources */,
 				9364A5662A0473340082F21C /* AuthManager.swift in Sources */,
@@ -500,25 +561,29 @@
 				930403B72A0938A200A4C46A /* NumberAuth.swift in Sources */,
 				930403912A0857F900A4C46A /* CodeEntry.swift in Sources */,
 				930403A92A0859B700A4C46A /* PhoneNumEntryView.swift in Sources */,
+				93FBE4C02A38CB8B004BB473 /* EditUserViewModel.swift in Sources */,
 				933B0BA62957A0F8000993CB /* Location.swift in Sources */,
 				939C6DEC29636E7D00F06C7E /* User.swift in Sources */,
 				930403A52A08597F00A4C46A /* Errors.swift in Sources */,
 				930403A32A08596200A4C46A /* StringExtension.swift in Sources */,
 				936C34CE295A28EB00BCF4F1 /* TrendView.swift in Sources */,
+				9397BD882A0AC7C40003B138 /* DataFetcher.swift in Sources */,
+				9397BD8A2A0AD2720003B138 /* APIManagerForQrCode.swift in Sources */,
 				9308370A29F73D680086200A /* APIManager.swift in Sources */,
 				9374B55F29C9C52400440C4D /* PersonView.swift in Sources */,
 				9308370829F73D600086200A /* commentViewModel.swift in Sources */,
 				93F5A48C2958F6F700A031B9 /* Promo.swift in Sources */,
-				9301EB1129FAA63B00FF83E8 /* SendOrderToApi.swift in Sources */,
 				933B0BA42957A0BE000993CB /* LocationsDataService.swift in Sources */,
 				930403A72A08599E00A4C46A /* CustomBackButton.swift in Sources */,
 				93D5BD7229E45A310027A9D3 /* Products.swift in Sources */,
 				930403B52A0864C700A4C46A /* ViewRouter.swift in Sources */,
+				93FBE4C42A39019A004BB473 /* EditUserRequest.swift in Sources */,
 				930403A02A08596200A4C46A /* FontExtension.swift in Sources */,
 				9382B76F29DF4CB100478601 /* LocationManager.swift in Sources */,
 				9304038B2A05B80E00A4C46A /* AuthService.swift in Sources */,
 				930403AB2A0859F800A4C46A /* Constants.swift in Sources */,
 				93D5BD7429E468300027A9D3 /* DetailViewProduct.swift in Sources */,
+				93FBE4CE2A39F43C004BB473 /* PromoViewModel.swift in Sources */,
 				937D99D52962FC54009EB1E2 /* QrCodeViewModel.swift in Sources */,
 				93D5BD7629E49B9C0027A9D3 /* CustomCorner.swift in Sources */,
 				9308370C29F73E1B0086200A /* Comments.swift in Sources */,
@@ -528,13 +593,16 @@
 				9304038D2A08570000A4C46A /* BigButton.swift in Sources */,
 				933B0BA12957A092000993CB /* LocationViewModel.swift in Sources */,
 				93B4FF482950D43B00F178D7 /* ContentView.swift in Sources */,
+				93FBE4BE2A38C2D2004BB473 /* UserUpdate.swift in Sources */,
 				93D5BD6729E2FDF10027A9D3 /* SelectColumn.swift in Sources */,
+				93FBE4BA2A376F49004BB473 /* cardOfPerson.swift in Sources */,
 				93B4FF462950D43B00F178D7 /* AzsTabBarApp.swift in Sources */,
 				930403B92A09396500A4C46A /* NumberService.swift in Sources */,
 				9374B56229C9C91100440C4D /* PersonCard.swift in Sources */,
 				930403B32A085B0800A4C46A /* WindowKey.swift in Sources */,
 				930403B12A085AB200A4C46A /* OnboardingStart.swift in Sources */,
 				9382B77229E029F200478601 /* LocationDetailView.swift in Sources */,
+				93FBE4BC2A3795C8004BB473 /* EditUser.swift in Sources */,
 				93E8934429623E620077BDD0 /* QrCodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -764,6 +832,14 @@
 				kind = branch;
 			};
 		};
+		93BD74332A0C1E80008BC872 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -791,6 +867,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 939C6DEF296373FE00F06C7E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		93BD74342A0C1E80008BC872 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93BD74332A0C1E80008BC872 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

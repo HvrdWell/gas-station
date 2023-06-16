@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Lottie
 
 struct OnboardingStart: View {
 
@@ -18,17 +19,19 @@ struct OnboardingStart: View {
     
     var body: some View {
         VStack {
-            Image.appIcon
-                .resizable()
-                .frame(width: 70, height: 70, alignment: .center)
-                .padding(.top, 100)
             Text("Здравствуйте")
                 .font(.medTwentyEight)
                 .foregroundColor(.space)
+                .padding(.top, 100)
             Text(appName)
                 .font(.medTwentyEight)
                 .foregroundColor(.slateBlue)
+            LottieView(animation: "carAnimation")
+                .frame(width: 370, height: 350)
+
+
             Spacer()
+
             VStack(spacing: buttonSpacing) {
                 NavigationLink(
                     destination: OnboardingPhoneEntry().environmentObject(viewRouter),
@@ -58,14 +61,7 @@ struct OnboardingStart: View {
             Spacer()
         }
     }
-    
-
-
-    
- 
-    
-    
-    }
+}
 
     
 

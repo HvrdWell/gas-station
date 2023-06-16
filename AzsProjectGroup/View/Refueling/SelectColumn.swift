@@ -35,9 +35,21 @@ struct SelectColumn: View {
                 }
 
             }
+
     }
 }
 
+private var backButton: some View {
+    Button(action: {
+        // Handle back button action
+    }) {
+        HStack {
+            Image(systemName: "chevron.left")
+                .foregroundColor(.green) // Set the desired color
+            Text("Back")
+        }
+    }
+}
 struct SelectColumn_Previews: PreviewProvider {
     static var previews: some View {
         SelectColumn()
@@ -50,7 +62,7 @@ extension SelectColumn{
                     ZStack{
                         Rectangle().foregroundColor(Color("sliderGradientSecond")).frame(width: 65, height: 130).cornerRadius(20)
                         VStack(spacing: 6){
-                            Text(column.columnNumber).bold().font(.largeTitle)
+                            Text("\(column.columnNumber)").bold().font(.largeTitle)
                             VStack(spacing: 2){
                                 ForEach(column.typeFuels, id: \.idTypeFuel) { fuel in
                                     Text(fuel.nameTypeFuel)
@@ -80,7 +92,7 @@ extension SelectColumn{
             ZStack{
                 Rectangle().foregroundColor(Color("sliderGradientSecond")).frame(width: 65, height: 130).cornerRadius(20)
                 VStack(spacing: 6){
-                    Text(column.columnNumber).bold().font(.largeTitle)
+                    Text("\(column.columnNumber)").bold().font(.largeTitle)
                     VStack(spacing: 2){
                         ForEach(column.typeFuels, id: \.idTypeFuel) { fuel in
                             Text(fuel.nameTypeFuel)

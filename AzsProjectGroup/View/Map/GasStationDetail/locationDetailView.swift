@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 struct locationDetailView: View {
-    
+    @StateObject private var fuelManager = FuelManager()
     @EnvironmentObject private var vm: LocationViewModel
     @EnvironmentObject private var ordervm: OrderViewModel
     @State private var isTaped = false
@@ -17,7 +17,7 @@ struct locationDetailView: View {
     var body: some View {
         NavigationView {
             
-            
+
             ScrollView{
                 VStack{
                     imageSection
@@ -80,26 +80,37 @@ extension locationDetailView{
                 .foregroundColor(.secondary)
         }
     }
-    private var gasoline: some View{
-        ScrollView(.horizontal, showsIndicators: false){
-            HStack{
-                ForEach(location.idTypeFuel, id: \.self){
-                    let Id = $0
-                    HStack{
-                        
-                        Text(location.nameTypeFuel[Id].components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
-                            .font(.callout)
-                            .foregroundColor(.secondary)
-                        Text("\(String(format: "%.2f",location.price[Id]))")
-                            .font(.callout)
-                            .foregroundColor(.black)
-                    }.padding(5)
-                        .border(.opacity(10))
-                        .foregroundColor(Color(location.nameTypeFuel[Id]))
+    private var gasoline: some View {
+           ScrollView(.horizontal, showsIndicators: false) {
+               HStack {
+                   ForEach(fuelManager.fuels, id: \.idTypeFuel) { fuel in
+                       HStack {
+                           Text(fuel.nameTypeFuel.components(separatedBy: CharacterSet.decimalDigits.union(.letters).inverted).joined())
+                               .font(.callout)
+                               .foregroundColor(.secondary)
+                           Text("\(String(format: "%.2f", fuel.price))")
+                               .font(.callout)
+                               .foregroundColor(.black)
+                       }
+                       .padding(5)
+                       .border(.opacity(10))
+                       .foregroundColor(Color(fuel.nameTypeFuel))
+                   }
                 }
             }
-        }
-    }
+           .onAppear {
+                  fuelManager.getFuelData { result in
+                      switch result {
+                      case .success(let fuels):
+                          DispatchQueue.main.async {
+                              fuelManager.fuels = fuels
+                          }
+                      case .failure(let error):
+                          print("Failed to fetch fuel data: \(error)")
+                      }
+                  }
+              }
+          }
     private var cells: some View {
         HStack(alignment: .center){
             NavigationLink(destination: SelectColumn()) {
@@ -182,6 +193,8 @@ extension locationDetailView{
                 .padding()
         }
     }
+    
+    
 }
 
 

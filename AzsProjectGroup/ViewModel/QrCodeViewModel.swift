@@ -10,6 +10,12 @@ import CoreImage
 import CoreImage.CIFilterBuiltins
 import SwiftUI
 
+import Foundation
+
+class QrCodeViewModel: ObservableObject {
+    @Published var scoresCard = "0"
+    @Published var numberOfQR = ""
+    @Published var userName = "Пользователь"
     func generateQR(text: String) -> Data? {
         let filter = CIFilter.qrCodeGenerator()
         guard let data = text.data(using: .ascii, allowLossyConversion: false) else { return nil }
@@ -20,5 +26,22 @@ import SwiftUI
         let uiimage = UIImage(ciImage: scaledCIImage)
         return uiimage.pngData()!
     }
-    
-    
+    func createCardAndVerifyToken() {
+        let token = UserDefaults.standard.string(forKey: Constants.TokenKey) ?? ""
+        let userId = UserDefaults.standard.integer(forKey: Constants.UserIDKey)
+        
+        APIManagerForQr.shared.createCardAndVerifyToken(token: token, userId: userId) { [weak self] result in
+            switch result {
+            case .success(let data):
+                DispatchQueue.main.async {
+                    self?.scoresCard = String(data.0)
+                    self?.numberOfQR = String(data.1)
+                    self?.userName = String(data.2)
+                }
+            case .failure(let error):
+                print("API request failed: \(error)")
+            }
+        }
+    }
+
+}

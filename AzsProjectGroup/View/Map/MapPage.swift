@@ -22,8 +22,10 @@ struct MapPage: View {
         ZStack{
             mapLayer
                 .ignoresSafeArea( )
-        }.sheet(item: $vm.sheetLocation,  onDismiss: nil){
-            location in locationDetailView(location: location)
+        }.sheet(item: $vm.sheetLocation, onDismiss: {
+            vm.sheetLocation = nil 
+        }) { location in
+            locationDetailView(location: location)
                 .presentationDetents(vm.ActiveView == 1 ? [.large] : [.large])
         }
 

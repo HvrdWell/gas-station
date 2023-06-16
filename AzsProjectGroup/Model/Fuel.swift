@@ -8,7 +8,7 @@
 import Foundation
 
 struct Column: Decodable {
-    let columnNumber: String
+    let columnNumber: Int
     let typeFuels: [Fuel]
 }
 

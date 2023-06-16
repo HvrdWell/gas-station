@@ -41,7 +41,7 @@ struct OnboardingPhoneEntry: View {
     
     var headerView: some View {
         VStack(spacing: 15) {
-            Text("Ступень 1/2")
+            Text("Шаг 1/2")
                 .font(.medTwelve)
                 .foregroundColor(.darkMustard)
                 .tracking(1.5)

@@ -10,7 +10,7 @@ import Foundation
 class NumberService {
     func sendNumber(phoneNumber: String, errorCompletion: @escaping (Error?) -> Void, successCompletion: @escaping (Bool) -> Void) {
         guard let url = URL(string: "http://localhost:5145/api/ExolveSMSAuth/SendCode") else {
-            print("Invalid URL")
+            print("Ошибка отправки запроса")
             return
         }
         
@@ -43,7 +43,7 @@ class NumberService {
     
     func verifyCode(phoneNumber: String, code: String, completion: @escaping (Bool, String, Int) -> Void) {
         guard let url = URL(string: "http://localhost:5145/api/ExolveSMSAuth/VerifyCode") else {
-            print("Invalid URL")
+            print("Ошибка отправки запроса")
             completion(false, "", 0)
             return
         }
@@ -63,7 +63,7 @@ class NumberService {
             
             URLSession.shared.dataTask(with: request) { data, response, error in
                 if let error = error {
-                    print("Request error:", error.localizedDescription)
+                    print("Ошибка отправки запроса", error.localizedDescription)
                     completion(false, "", 0)
                     return
                 }
@@ -82,7 +82,7 @@ class NumberService {
                                     completion(false, "", 0)
                                 }
                             } catch {
-                                print("JSON deserialization error:", error.localizedDescription)
+                                print("Ошибка отправки запроса", error.localizedDescription)
                                 completion(false, "", 0)
                             }
                         } else {
@@ -94,8 +94,8 @@ class NumberService {
                 }
             }.resume()
         } catch {
-            print("JSON serialization error:", error.localizedDescription)
-            completion(false, "", 0) // Notify failure
+            print("Ошибка отправки запроса", error.localizedDescription)
+            completion(false, "", 0) 
         }
     }
 

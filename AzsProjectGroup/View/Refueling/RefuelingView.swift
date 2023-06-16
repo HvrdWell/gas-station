@@ -31,26 +31,16 @@ struct RefuelingView: View {
                 }
             }
             .onAppear() {
-                if let columnNumber = Int(column.columnNumber) {
-                    apiCall(numberofcolumn: columnNumber).getUserComments { comments,error in
+                    apiCall(numberofcolumn: column.columnNumber).getUserComments { comments,error in
                         if let comments = comments{
                             self.comments = comments
                         }else if let error = error{
                             print(error.localizedDescription)
                         }
                     }
-                }
+                
             }
-            .navigationTitle("Title")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    HStack {
-                        Spacer()
-                        Spacer()
-                    }
-                }
-            }
+
         }
     }
 }

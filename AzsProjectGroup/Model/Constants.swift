@@ -10,7 +10,6 @@ import SwiftUI
 
 struct Constants {
     
-    //UserDefault keys
     static let TokenKey = "UserToken"
     static let UserIDKey = "UserID"
     

@@ -14,9 +14,8 @@ class apiCall {
     init(numberofcolumn: Int) {
         self.numberofcolumn = numberofcolumn
     }
-    // Initialize the `url` property with the given column number
     func initializeUrl(numberofcolumn: Int)-> String {
-        self.numberofcolumn = numberofcolumn // Update the instance variable with the new value
+        self.numberofcolumn = numberofcolumn
         url = "\(starturl)\(numberofcolumn)"
         return url
     }

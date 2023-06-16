@@ -21,7 +21,6 @@ class ViewRouter: ObservableObject {
     init() {
         if let token = UserDefaults.standard.string(forKey: Constants.TokenKey),
             let userId = UserDefaults.standard.string(forKey: Constants.UserIDKey) {
-            // Validate the token and userId here if needed
             self.token = token
             self.userId = userId
             currentView = .main
