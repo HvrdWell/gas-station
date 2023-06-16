@@ -6,14 +6,26 @@ in development
 </p>
 
 <p float="left" align="center">
-<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/6d2f9563-d3f5-43c9-886f-9ef745e2905e">
-<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/c9b4ff4f-e0b2-4bf9-8fa5-57803206f0a8">
-<img width="250" alt="Снимок экрана 2023-05-09 в 19 16 13" src="https://github.com/HvrdWell/gas-station/assets/34194992/087d4472-8865-40a8-bbe0-553c79f850f9">
+<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/6b7ad67e-8965-46de-8750-64e3e2baff82">
 
-  
-<img width="250" alt="image" src="https://user-images.githubusercontent.com/34194992/230738073-4f7ad34a-a8d7-488d-9209-9552148af309.png">
-<img width="250" alt="image" src="https://user-images.githubusercontent.com/34194992/230738094-ef8a6ee3-cf1d-4793-a24e-2116bee1c94c.png">
-<img width="250" alt="image" src="https://user-images.githubusercontent.com/34194992/230738107-f6044c55-e7b6-4e79-8777-ed1b8626d932.png">
-<img width="250" alt="image" src="https://user-images.githubusercontent.com/34194992/230738119-91f85398-bb31-44e2-8a46-7e21b3f74105.png">
-<img width="250" alt="image" src="https://user-images.githubusercontent.com/34194992/230738140-069bc84b-16fe-4e70-8725-c0c28f324cce.png">
+<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/f6020a3a-e391-4dbf-aa9c-ee6e8929cced">
+
+<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/a1bb34b9-7daa-4bc4-ba74-7fe963095104">
+
+
+<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/b0e46089-a414-4f56-812f-38d3d20c545e">
+
+
+<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/b3a34397-9d28-4ce4-9bc0-589f50805d49">
+<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/130f5d1d-466f-4780-aab8-834bc0dfb074">
+
+
+<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/e4034c9d-9d95-48e1-99ba-a98e6feed0b0">
+
+<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/901de44e-90ec-4d48-8b0d-0795a8c68760">
+<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/482c11db-127b-459b-b82a-790290b506fc">
+
+<img width="250" alt="image" src="https://github.com/HvrdWell/gas-station/assets/34194992/40c1645b-5a86-4710-b02d-79796615ccfb">
+
+
 </p>
