@@ -4,7 +4,7 @@
 
 <p align="center">
 
-<p align="center">
+<p align="left">
     <a href="https://swift.org/">
         <img src="https://img.shields.io/badge/Swift-5.8-orange.svg?style=flat"
              alt="Swift 5.8">
